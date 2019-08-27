@@ -10,7 +10,7 @@ const bottom = {
 };
 
 const iconWrapper = {
-  width: 144,
+  width: 210,
   margin: 'auto',
 };
 
@@ -32,6 +32,10 @@ export class Footer extends React.Component<any, any> {
           <a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"
              href="https://www.linkedin.com/company/serbian-case-for-space/">
             <i className="fab fa-linkedin" />
+          </a>
+          <a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"
+             href="https://www.facebook.com/serbiancaseforspace/">
+            <i className="fab fa-facebook" />
           </a>
           <a style={icon} className="footer-icon" target="_blank" rel="noopener noreferrer"
              href="mailto:info@serbiancaseforspace.com">
