@@ -26,7 +26,7 @@ export class Blog extends React.Component<any, any> {
       </div>
       <div className="container mb-5">
         <div className="row mb-5">
-          <div className="col-12 col-lg-8 mx-auto">
+          <div className="col-12 col-lg-8 mx-auto overflow-hidden">
 
             <article className="mb-5">
               <span className="text-muted">16 April 2019</span>

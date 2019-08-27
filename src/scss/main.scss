@@ -23,3 +23,15 @@ body {
   flex-direction: column;
   justify-content: space-between
 }
+
+.zoom-container {
+  overflow: hidden;
+  display: block;
+  max-height: 300px;
+
+  img:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+  }
+
+}

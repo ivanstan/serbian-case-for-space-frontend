@@ -22,14 +22,14 @@ export class Team extends React.Component<any, any> {
                 <img style={img} width="100%" src="/images/anja.jpg" alt="Anja Nakarada Pecujlic" />
                 <div style={p}>
                   <h2 className="h4">ANJA NAKARADA PEČUJLIĆ</h2>
-                  <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
+                  {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
                     <p>Anja Nakarada Pecujlic is a PhD candidate and assistant researcher at
                       the
                       University of Cologne where she is writing her thesis on space law. Prior to
                       that, she was an External Consultant to the European Space Policy Institute in
                       Vienna on space law and policy topics. She graduated in 2014 from the Law
                       Faculty of the University of Vienna specializing in international law.</p>
-                  </ScrollAnimation>
+                  {/*</ScrollAnimation>*/}
                 </div>
               </div>
               <p>Co-founder and CEO</p>
@@ -40,12 +40,12 @@ export class Team extends React.Component<any, any> {
                 <img style={img} width="100%" src="/images/marko.jpg" alt="Marko Pajovic" />
                 <div style={p}>
                   <h2 className="h4">MARKO PAJOVIĆ</h2>
-                  <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
+                  {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
                     <p>Marko Pajovic is a freelance researcher with a focus on international
                       relations, EU, and industrial policies. Additionally, he is a business developer
                       for a gaming company "Demagog Studio" and a private company "Villa PM". He
                       graduated at the Faculty of Law, University of Belgrade.</p>
-                  </ScrollAnimation>
+                  {/*</ScrollAnimation>*/}
                 </div>
               </div>
               <p>Co-founder and COO</p>

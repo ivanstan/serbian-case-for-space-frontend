@@ -43,8 +43,8 @@ export class Home extends React.Component<any, any> {
         <div className="row">
           <div className="col-lg-6 mb-5">
             <ScrollAnimation animateIn="fadeIn" duration={1}>
-              <Link to={'/about'}>
-                <img width="100%" className="mb-5" src="/images/about.jpg" alt="" />
+              <Link to={'/about'} className="zoom-container mb-4">
+                <img width="100%" className="mb-5" src="/images/about.jpg" alt="About"/>
               </Link>
               <h4 className="h5 text-center">ABOUT</h4>
               <p className="text-center">Find out about our organization, mission, and our
@@ -55,8 +55,8 @@ export class Home extends React.Component<any, any> {
           </div>
           <div className="col-lg-6 mb-5">
             <ScrollAnimation animateIn="fadeIn" duration={1}>
-              <Link to={'/blog'}>
-                <img width="100%" className="mb-5" src="/images/blog.jpg" alt="" />
+              <Link to={'/blog'} className="zoom-container mb-4">
+                <img width="100%" className="mb-5" src="/images/blog.jpg" alt="Blog" />
               </Link>
               <h4 className="h5 text-center">BLOG</h4>
               <p className="text-center">Read the latest news concerning space community and
