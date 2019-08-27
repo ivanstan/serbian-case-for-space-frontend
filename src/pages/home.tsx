@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const image = {
   backgroundImage: 'url(/images/front-page.jpg)',
@@ -41,25 +42,29 @@ export class Home extends React.Component<any, any> {
         </div>
         <div className="row">
           <div className="col-lg-6 mb-5">
-            <Link to={'/about'}>
-              <img width="100%" className="mb-5" src="/images/about.jpg" alt="" />
-            </Link>
-            <h4 className="h5 text-center">ABOUT</h4>
-            <p className="text-center">Find out about our organization, mission, and our
-              projects</p>
-            <Link className="d-block text-center mx-auto" to={'/about'} style={{width: 85}}>Learn
-              More</Link>
+            <ScrollAnimation animateIn="fadeIn" duration={1}>
+              <Link to={'/about'}>
+                <img width="100%" className="mb-5" src="/images/about.jpg" alt="" />
+              </Link>
+              <h4 className="h5 text-center">ABOUT</h4>
+              <p className="text-center">Find out about our organization, mission, and our
+                projects</p>
+              <Link className="d-block text-center mx-auto" to={'/about'} style={{width: 85}}>Learn
+                More</Link>
+            </ScrollAnimation>
           </div>
-
           <div className="col-lg-6 mb-5">
-            <Link to={'/blog'}>
-              <img width="100%" className="mb-5" src="/images/blog.jpg" alt="" />
-            </Link>
-            <h4 className="h5 text-center">BLOG</h4>
-            <p className="text-center">Read the latest news concerning space community and
-              industry</p>
-            <Link className="d-block text-center mx-auto" to={'/blog'} style={{width: 205}}>Find Out
-              Now</Link>
+            <ScrollAnimation animateIn="fadeIn" duration={1}>
+              <Link to={'/blog'}>
+                <img width="100%" className="mb-5" src="/images/blog.jpg" alt="" />
+              </Link>
+              <h4 className="h5 text-center">BLOG</h4>
+              <p className="text-center">Read the latest news concerning space community and
+                industry</p>
+              <Link className="d-block text-center mx-auto" to={'/blog'} style={{width: 205}}>Find
+                Out
+                Now</Link>
+            </ScrollAnimation>
           </div>
         </div>
       </div>
