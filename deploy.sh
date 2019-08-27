@@ -1,11 +1,21 @@
 #!/usr/bin/env bash
 set -e
 
-export DEPLOY_PATH=/home/spacehub/projects/serbiancaseforspace.com
-export HOST=spacehub.rs
-export USER=spacehub
-export PORT=2233
-export ARTIFACT_NAME=artifact-`date '+%Y%m%d%H%M%S'`.tar.gz;
+DEPLOY_PATH=/home/spacehub/projects/serbiancaseforspace.com
+HOST=spacehub.rs
+USER=spacehub
+PORT=2233
+ARTIFACT_NAME=artifact-$(date '+%Y%m%d%H%M%S').tar.gz
 
-print "yarn build"
+echo "yarn build"
 yarn build
+
+echo "create artifact"
+tar -czf "${ARTIFACT_NAME}" -C build .
+
+echo "upload artifact"
+scp -r -P ${PORT} "${ARTIFACT_NAME}" ${USER}@${HOST}:/${DEPLOY_PATH}/
+rm "${ARTIFACT_NAME}"
+
+echo "deploy on server"
+ssh ${USER}@${HOST} -p${PORT} "cd ${DEPLOY_PATH} && tar -xf ${ARTIFACT_NAME} && rm ${ARTIFACT_NAME}"
