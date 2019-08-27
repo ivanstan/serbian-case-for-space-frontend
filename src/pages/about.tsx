@@ -1,5 +1,6 @@
 import React from 'react';
 import {title} from "./home";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const image = {
   backgroundImage: 'url(/images/earth-space.jpg)',
@@ -45,7 +46,9 @@ export class About extends React.Component<any, any> {
         <div className="row mb-5">
           <div className="col-12 col-lg-8 mx-auto d-flex align-items-center">
             <div style={item}>
-              <img width='100%' src="/images/graph.jpg" alt="" />
+              <ScrollAnimation animateIn="fadeInLeft" duration={1}>
+                <img width='100%' src="/images/graph.jpg" alt="" />
+              </ScrollAnimation>
             </div>
             <p style={p}>Supporting the development of domestic private industry interested in
               expanding its
@@ -59,7 +62,9 @@ export class About extends React.Component<any, any> {
               academia,
               and decision makers.</p>
             <div style={item}>
-              <img width='100%' src="/images/ada.jpg" alt="" />
+              <ScrollAnimation animateIn="fadeInRight" duration={1}>
+                <img width='100%' src="/images/ada.jpg" alt="" />
+              </ScrollAnimation>
             </div>
           </div>
         </div>
@@ -67,7 +72,9 @@ export class About extends React.Component<any, any> {
         <div className="row mb-5">
           <div className="col-12 col-lg-8 mx-auto d-flex align-items-center">
             <div style={item}>
-              <img width='100%' src="/images/satelit.jpg" alt="" />
+              <ScrollAnimation animateIn="fadeInLeft" duration={1}>
+                <img width='100%' src="/images/satelit.jpg" alt="" />
+              </ScrollAnimation>
             </div>
             <p style={p}>Raising awareness and facilitating the exchange of space-relevant
               information and
