@@ -46,7 +46,7 @@ export class About extends React.Component<any, any> {
         <div className="row mb-5">
           <div className="col-12 col-lg-8 mx-auto d-flex align-items-center">
             <div style={item}>
-              <ScrollAnimation animateIn="fadeInLeft" duration={1}>
+              <ScrollAnimation animateIn="fadeInLeft" duration={1} animateOnce={true}>
                 <img width='100%' src="/images/graph.jpg" alt="" />
               </ScrollAnimation>
             </div>
@@ -62,7 +62,7 @@ export class About extends React.Component<any, any> {
               academia,
               and decision makers.</p>
             <div style={item}>
-              <ScrollAnimation animateIn="fadeInRight" duration={1}>
+              <ScrollAnimation animateIn="fadeInRight" duration={1} animateOnce={true}>
                 <img width='100%' src="/images/ada.jpg" alt="" />
               </ScrollAnimation>
             </div>
@@ -72,7 +72,7 @@ export class About extends React.Component<any, any> {
         <div className="row mb-5">
           <div className="col-12 col-lg-8 mx-auto d-flex align-items-center">
             <div style={item}>
-              <ScrollAnimation animateIn="fadeInLeft" duration={1}>
+              <ScrollAnimation animateIn="fadeInLeft" duration={1} animateOnce={true}>
                 <img width='100%' src="/images/satelit.jpg" alt="" />
               </ScrollAnimation>
             </div>
