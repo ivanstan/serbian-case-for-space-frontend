@@ -2,6 +2,8 @@
 set -e
 
 DEPLOY_PATH=/home/spacehub/projects/serbiancaseforspace.com
+REPOSITORY_URL=$(git remote get-url origin)
+REPOSITORY_NAME=$(basename "$(git rev-parse --show-toplevel)")
 HOST=spacehub.rs
 USER=spacehub
 PORT=2233
