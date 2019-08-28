@@ -1,10 +1,6 @@
 import React from 'react';
 import ScrollAnimation from "react-animate-on-scroll";
 
-const p = {
-  padding: '0 2em',
-};
-
 const img = {
   maxWidth: 315
 };
@@ -20,7 +16,7 @@ export class Team extends React.Component<any, any> {
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
                 <img style={img} width="100%" src="/images/anja.jpg" alt="Anja Nakarada Pecujlic" />
-                <div style={p}>
+                <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">ANJA NAKARADA PEČUJLIĆ</h2>
                   {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
                     <p>Anja Nakarada Pecujlic is a PhD candidate and assistant researcher at
@@ -38,7 +34,7 @@ export class Team extends React.Component<any, any> {
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
                 <img style={img} width="100%" src="/images/marko.jpg" alt="Marko Pajovic" />
-                <div style={p}>
+                <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">MARKO PAJOVIĆ</h2>
                   {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
                     <p>Marko Pajovic is a freelance researcher with a focus on international
@@ -54,7 +50,7 @@ export class Team extends React.Component<any, any> {
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
                 <img style={img} width="100%" src="/images/andrej.jpg" alt="Andrej Djurmez" />
-                <div style={p}>
+                <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">ANDREJ ĐURMEZ</h2>
                   <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
                     <p>Andrej Djurmez is an attorney at law, working as a junior partner in a regional
@@ -70,7 +66,7 @@ export class Team extends React.Component<any, any> {
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
                 <img style={img} width="100%" src="/images/bosko.jpg" alt="Bosko Vojkic" />
-                <div style={p}>
+                <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">BOŠKO VOJKIĆ</h2>
                   <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
                     <p>Bosko Vojkic is Space Law and Telecommunications professional with previous
@@ -88,7 +84,7 @@ export class Team extends React.Component<any, any> {
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
                 <img style={img} width="100%" src="/images/ivan.png" alt="Ivan Stanojevic" />
-                <div style={p}>
+                <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">IVAN STANOJEVIĆ</h2>
                   <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
                     <p>Ivan Stanojevic is a software engineer working for Byteout Software. There he
