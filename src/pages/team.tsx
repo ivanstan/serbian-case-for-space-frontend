@@ -15,16 +15,16 @@ export class Team extends React.Component<any, any> {
 
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
-                <img style={img} width="100%" src="/images/anja.jpg" alt="Anja Nakarada Pecujlic" />
+                <img style={img} width="100%" src="/images/anja.jpg" alt="Anja Nakarada Pecujlic"/>
                 <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">ANJA NAKARADA PEČUJLIĆ</h2>
                   {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
-                    <p>Anja Nakarada Pecujlic is a PhD candidate and assistant researcher at
-                      the
-                      University of Cologne where she is writing her thesis on space law. Prior to
-                      that, she was an External Consultant to the European Space Policy Institute in
-                      Vienna on space law and policy topics. She graduated in 2014 from the Law
-                      Faculty of the University of Vienna specializing in international law.</p>
+                  <p>Anja Nakarada Pecujlic is a PhD candidate and assistant researcher at
+                    the
+                    University of Cologne where she is writing her thesis on space law. Prior to
+                    that, she was an External Consultant to the European Space Policy Institute in
+                    Vienna on space law and policy topics. She graduated in 2014 from the Law
+                    Faculty of the University of Vienna specializing in international law.</p>
                   {/*</ScrollAnimation>*/}
                 </div>
               </div>
@@ -33,14 +33,19 @@ export class Team extends React.Component<any, any> {
 
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
-                <img style={img} width="100%" src="/images/marko.jpg" alt="Marko Pajovic" />
+                <img style={img} width="100%" src="/images/marko.jpg" alt="Marko Pajovic"/>
                 <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">MARKO PAJOVIĆ</h2>
                   {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
-                    <p>Marko Pajovic is a freelance researcher with a focus on international
-                      relations, EU, and industrial policies. Additionally, he is a business developer
-                      for a gaming company "Demagog Studio" and a private company "Villa PM". He
-                      graduated at the Faculty of Law, University of Belgrade.</p>
+                  <p>Marko Pajovic is a freelance researcher with a focus on international relations, EU, and space
+                    policies. In 2017 he founded Serbian Case for Space Foundation which acts as an independent platform
+                    for developing national space policies and strategies. In 2018 he attended an International
+                    Astronautical Congress in Bremen, where he presented a paper on the issue of legal use of satellite
+                    data: Case of Republic of Serbia. He is also one of the executive members on project "Forest and
+                    Climate" which won several awards both domestic and international. In 2019, together with a group of
+                    colleagues, he initiated the "SpaceHub" project in Belgrade, which specializes in space-related
+                    activities. Also, he has an experience in human rights watch since he coordinated with NGOs in
+                    Serbia on different projects regarding this issue.</p>
                   {/*</ScrollAnimation>*/}
                 </div>
               </div>
@@ -49,7 +54,7 @@ export class Team extends React.Component<any, any> {
 
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
-                <img style={img} width="100%" src="/images/andrej.jpg" alt="Andrej Djurmez" />
+                <img style={img} width="100%" src="/images/andrej.jpg" alt="Andrej Djurmez"/>
                 <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">ANDREJ ĐURMEZ</h2>
                   <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
@@ -65,7 +70,7 @@ export class Team extends React.Component<any, any> {
 
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
-                <img style={img} width="100%" src="/images/bosko.jpg" alt="Bosko Vojkic" />
+                <img style={img} width="100%" src="/images/bosko.jpg" alt="Bosko Vojkic"/>
                 <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">BOŠKO VOJKIĆ</h2>
                   <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
@@ -83,7 +88,7 @@ export class Team extends React.Component<any, any> {
 
             <div className="mb-5">
               <div className="d-lg-flex mb-1">
-                <img style={img} width="100%" src="/images/ivan.png" alt="Ivan Stanojevic" />
+                <img style={img} width="100%" src="/images/ivan.png" alt="Ivan Stanojevic"/>
                 <div className="px-lg-4 mt-4 mt-lg-0">
                   <h2 className="h4">IVAN STANOJEVIĆ</h2>
                   <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
