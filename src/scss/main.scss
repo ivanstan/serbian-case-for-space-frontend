@@ -1,10 +1,10 @@
 @import "~bootstrap/scss/bootstrap";
 
 $fa-font-path : "/fonts/font-awesome";
-@import "~@fortawesome/fontawesome-free-webfonts/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-regular";
-@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-solid";
-@import "~@fortawesome/fontawesome-free-webfonts/scss/fa-brands";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
 
 body {
   margin: 0;
