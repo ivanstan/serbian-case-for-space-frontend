@@ -14,6 +14,7 @@ import Home from './pages/Home'
 import { observer } from 'mobx-react'
 import { store } from './stores/Store'
 import { I18n } from 'react-polyglot'
+import { Helmet } from 'react-helmet'
 
 @observer
 export default class App extends React.Component<any, any> {
@@ -21,6 +22,12 @@ export default class App extends React.Component<any, any> {
   render(): any {
     return (
       <div className="flex-wrapper">
+        <Helmet>
+          <meta charSet="utf-8"/>
+          {/*<title>My Title</title>*/}
+          {/*<link rel="canonical" href="http://mysite.com/example"/>*/}
+        </Helmet>
+
         <I18n locale={store.locale} messages={store.messages} allowMissing={true}>
           <Router>
             <Header/>

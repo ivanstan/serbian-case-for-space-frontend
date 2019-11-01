@@ -6,11 +6,25 @@ $fa-font-path : "/fonts/font-awesome";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: red;
+  background: yellow;
+}
+
 body {
   margin: 0;
   font-family: 'Muli', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 .footer-icon:hover {
