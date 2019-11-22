@@ -28,7 +28,7 @@ rules:
   no-use-before-define: ["error", { "functions": false, "classes": true, "variables": true }]
   quotes:
     - error
-    - double
+    - single
   import/no-extraneous-dependencies: off
   import/no-named-as-default: off
   import/prefer-default-export: off

@@ -4,19 +4,21 @@ import { translate } from 'react-polyglot'
 
 class Contact extends React.Component<any, any> {
   public render() {
+    const { t } = this.props;
+
     return (
       <div className="mb-5">
         <div className="container mb-5">
           <div className="row mb-5">
             <div className="col-12 col-lg-8 mx-auto">
-              <h2>CONTACT US</h2>
+              <h2>{t('CONTACT US')}</h2>
               <form
                 action={'https://formspree.io/' + contactMail}
                 method="POST"
               >
                 <div className="form-group">
                   <label htmlFor="email">
-                    Email <span className="text-danger">*</span>
+                    {t('Email')} <span className="text-danger">*</span>
                   </label>
                   <input
                     type="text"
@@ -30,7 +32,7 @@ class Contact extends React.Component<any, any> {
                 <div className="d-flex">
                   <div className="form-group flex-grow-1 mr-3">
                     <label htmlFor="firstName">
-                      First name <span className="text-danger">*</span>
+                      {t('First name')} <span className="text-danger">*</span>
                     </label>
                     <input
                       type="text"
@@ -42,7 +44,7 @@ class Contact extends React.Component<any, any> {
 
                   <div className="form-group flex-grow-1">
                     <label htmlFor="lastName">
-                      Last name <span className="text-danger">*</span>
+                      {t('Last name')} <span className="text-danger">*</span>
                     </label>
                     <input
                       type="text"
@@ -55,7 +57,7 @@ class Contact extends React.Component<any, any> {
 
                 <div className="form-group">
                   <label htmlFor="subject">
-                    Subject <span className="text-danger">*</span>
+                    {t('Subject')} <span className="text-danger">*</span>
                   </label>
                   <input
                     type="text"
@@ -68,7 +70,7 @@ class Contact extends React.Component<any, any> {
 
                 <div className="form-group">
                   <label htmlFor="message">
-                    Message <span className="text-danger">*</span>
+                    {t('Message')} <span className="text-danger">*</span>
                   </label>
                   <textarea
                     rows={10}
@@ -82,7 +84,7 @@ class Contact extends React.Component<any, any> {
                 <input
                   className="btn btn-lg btn-success"
                   type="submit"
-                  value="Submit"
+                  value={t('Submit')}
                 />
               </form>
             </div>

@@ -15,8 +15,7 @@ html {
 }
 
 ::selection {
-  color: red;
-  background: yellow;
+  background: transparent;
 }
 
 body {
@@ -47,5 +46,12 @@ body {
     transition: all .5s;
     transform: scale(1.1);
   }
+}
 
+.project-card {
+  min-height: 100%;
+
+  .media {
+    height: 300px;
+  }
 }

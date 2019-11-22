@@ -1,7 +1,7 @@
 import React from 'react'
 import { title } from './Home'
 import { translate } from 'react-polyglot'
-import { Project } from '../components/Project'
+import Project from '../components/Project'
 
 const image = {
   backgroundImage: 'url(/images/projects.jpg)',
@@ -20,7 +20,7 @@ class Projects extends React.Component<any, any> {
 
         <div className="container mb-5">
           <div className="row mb-5">
-            <div className="col-12 col-lg-8 mx-auto">
+            <div className="col-12 col-lg-6 mx-auto">
               <Project
                 title={'REPORT NO. 1: “ŠUME I KLIMA” PROJECT DONE IN ASSOCIATION WITH “JEDAN STEPEN” AND “CRNOG”.'}
                 image={'/images/sume-i-klima.jpg'}
@@ -33,6 +33,9 @@ class Projects extends React.Component<any, any> {
                   http://jedanstepen.org/wp-content/uploads/2019/01/Sume-i-klima-Brosura.pdf
                 </a>
               </Project>
+            </div>
+
+            <div className="col-12 col-lg-6 mx-auto">
               <Project
                 title={'REPORT NO.2: FIRST SPACEHUB IN SERBIA. (ONGOING)'}
                 image={'/images/spacehub.jpg'}
@@ -45,6 +48,12 @@ class Projects extends React.Component<any, any> {
                   <li>Near-term, mid-term and long-term recommendations</li>
                 </ul>
               </Project>
+            </div>
+
+          </div>
+            <div className="row mb-5">
+
+            <div className="col-12 col-lg-6 mx-auto">
               <Project
                 title={'REPORT NO. 3: SPACE CAPABILITIES IN THE BALKAN REGION (FORTHCOMING).'}
                 image={'/images/region.jpg'}
@@ -57,6 +66,8 @@ class Projects extends React.Component<any, any> {
                   <li>Near-term, mid-term and long-term recommendations</li>
                 </ul>
               </Project>
+            </div>
+            <div className="col-12 col-lg-6 mx-auto">
               <Project
                 title={'REPORT NO. 4: PROMOTING PRODUCTIVE COOPERATION BETWEEN SPACE LAWYERS AND ENGINEERS.'}
                 image={'/images/igi.jpg'}

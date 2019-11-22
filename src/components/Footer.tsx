@@ -1,5 +1,8 @@
 import React from 'react'
 import { translate } from 'react-polyglot'
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 const top = {
   backgroundColor: '#363636',
@@ -11,7 +14,7 @@ const bottom = {
 }
 
 const iconWrapper = {
-  width: 210,
+  width: 220,
   margin: 'auto',
 }
 
@@ -37,7 +40,7 @@ class Footer extends React.Component<any, any> {
               rel="noopener noreferrer"
               href="https://www.linkedin.com/company/serbian-case-for-space/"
             >
-              <i className="fab fa-linkedin" />
+              <LinkedInIcon/>
             </a>
             <a
               style={icon}
@@ -46,7 +49,7 @@ class Footer extends React.Component<any, any> {
               rel="noopener noreferrer"
               href="https://www.facebook.com/serbiancaseforspace/"
             >
-              <i className="fab fa-facebook" />
+              <FacebookIcon/>
             </a>
             <a
               style={icon}
@@ -55,7 +58,7 @@ class Footer extends React.Component<any, any> {
               rel="noopener noreferrer"
               href="mailto:info@serbiancaseforspace.com"
             >
-              <i className="far fa-envelope" />
+              <MailOutlineIcon/>
             </a>
           </div>
         </div>
