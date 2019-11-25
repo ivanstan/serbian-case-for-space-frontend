@@ -1,3 +1,6 @@
+
+$blue: #3469A4;
+
 @import "~bootstrap/scss/bootstrap";
 
 $fa-font-path : "/fonts/font-awesome";
@@ -15,7 +18,7 @@ html {
 }
 
 ::selection {
-  background: transparent;
+  background: #3469A4;
 }
 
 body {

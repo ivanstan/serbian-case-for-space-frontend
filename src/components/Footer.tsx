@@ -5,11 +5,11 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 
 const top = {
-  backgroundColor: '#363636',
+  backgroundColor: '#6F6D6D',
 }
 
 const bottom = {
-  backgroundColor: '#1f1f1f',
+  backgroundColor: '#373636',
   height: 128,
 }
 

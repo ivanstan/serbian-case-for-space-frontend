@@ -13,8 +13,9 @@ class Header extends React.Component<any, any> {
         <Navbar expand="lg">
           <Link to="/">
             <img
-              src="/images/logo.png"
-              width="265"
+              className="mr-2"
+              src="/images/logo/logo.svg"
+              width="50"
               alt="Serbian Case For Space Foundation"
             />
           </Link>

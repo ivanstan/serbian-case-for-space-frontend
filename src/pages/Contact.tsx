@@ -82,7 +82,7 @@ class Contact extends React.Component<any, any> {
                 </div>
 
                 <input
-                  className="btn btn-lg btn-success"
+                  className="btn btn-lg btn-primary"
                   type="submit"
                   value={t('Submit')}
                 />
