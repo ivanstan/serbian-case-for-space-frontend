@@ -1,9 +1,16 @@
 {
-  "Contact": "Kontakt",
-  "Partners": "Partneri",
-  "Team": "Tim",
-  "Blog": "Blog",
-  "Projects": "Projekti",
   "About": "Info",
-  "Home": "Početna"
+  "Blog": "Blog",
+  "Contact": "Kontakt",
+  "CONTACT US": "Kontakt",
+  "Email": "Imejl",
+  "First name": "Ime",
+  "Home": "Početna",
+  "Last name": "Prezime",
+  "Message": "Poruka",
+  "Partners": "Partneri",
+  "Projects": "Projekti",
+  "Subject": "Tema",
+  "Submit": "Pošalji",
+  "Team": "Tim"
 }

@@ -155,12 +155,12 @@ class Team extends React.Component<any, any> {
                         Challenge in Serbia. He is also taking a role of the
                         Space Apps lead for Belgrade. He holds a degree in
                         software engineering from Singidunum University in
-                        Belgrade.{' '}
+                        Belgrade.
                       </p>
                     </ScrollAnimation>
                   </div>
                 </div>
-                <p>Technology Specialist</p>
+                <p>Chief Technical Officer</p>
               </div>
             </div>
           </div>

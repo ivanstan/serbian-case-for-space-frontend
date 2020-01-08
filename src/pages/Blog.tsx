@@ -4,7 +4,7 @@ import { translate } from 'react-polyglot'
 const image = {
   backgroundImage: 'url(/images/blog-big.jpg)',
   backgroundSize: 'cover',
-  height: '100vh',
+  height: '50vh',
   position: 'relative' as 'relative',
 }
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import { contactMail } from '../config'
 import { translate } from 'react-polyglot'
+import { ExternalLink } from '../components/ExternalLink'
 
 class Partners extends React.Component<any, any> {
   public render() {
@@ -14,43 +15,69 @@ class Partners extends React.Component<any, any> {
                 GOALS.
               </h2>
 
-              <hr className="my-5" />
+              <hr className="my-5"/>
 
               <div className="d-flex align-items-center">
-                <img
-                  height="2%"
-                  width="19%"
-                  alt="BFPE"
-                  src="/images/bfpe.jpg"
-                />
-                <img
-                  height="2%"
-                  width="20%"
-                  alt="Share"
-                  src="/images/share.jpg"
-                />
-                <img
-                  height="2%"
-                  width="12%"
-                  alt="Jedan Stepen"
-                  src="/images/1c.png"
-                />
-                <img
-                  height="2%"
-                  width="20%"
-                  alt="ECSL"
-                  src="/images/ecsl2.png"
-                />
-                <img height="2%" width="14%" alt="FEA" src="/images/fea.jpg" />
-                <img
-                  height="2%"
-                  width="14%"
-                  alt="Space Job Fair"
-                  src="/images/spacejobfair.png"
-                />
+                <ExternalLink href="https://en.bfpe.org/">
+                  <img
+                    width="100%"
+                    alt="BFPE"
+                    src="/images/bfpe.jpg"
+                  />
+                </ExternalLink>
+                <ExternalLink href="https://www.sharefoundation.info/sr/">
+                  <img
+                    width="100%"
+                    alt="Share"
+                    src="/images/share.jpg"
+                  />
+                </ExternalLink>
+                <ExternalLink href="http://jedanstepen.org/sr/" style={{display: 'flex'}}>
+                  <img
+                    width="70%"
+                    alt="Jedan Stepen"
+                    src="/images/1c.png"
+                  />
+                </ExternalLink>
+                <ExternalLink href="https://www.esa.int/About_Us/ECSL_European_Centre_for_Space_Law">
+                  <img
+                    width="100%"
+                    alt="ECSL"
+                    src="/images/ecsl2.png"
+                  />
+                </ExternalLink>
+              </div>
+              <div className="d-flex align-items-center">
+                <ExternalLink href="https://www.fondazioneamaldi.it/en/" style={{display: 'flex'}}>
+                  <img width="65%" alt="FEA" src="/images/fea.jpg"/>
+                </ExternalLink>
+                <ExternalLink href="https://spacejobfair.com/" style={{display: 'flex', justifyContent: 'end'}}>
+                  <img
+                    width="65%"
+                    alt="Space Job Fair"
+                    src="/images/spacejobfair.png"
+                  />
+                </ExternalLink>
+                <ExternalLink href="https://www.vda.pt/en/">
+                  <div style={{ backgroundColor: '#000', padding: 10, maxWidth: 200, margin: 10 }}>
+                    <img
+                      width="100%"
+                      alt=""
+                      src="/images/aaa.png"
+                    />
+                  </div>
+                </ExternalLink>
+                <ExternalLink href="https://a3space.org/" style={{marginLeft: 40, marginRight: 20}}>
+                  <img
+                    width="100px"
+                    height="200px"
+                    alt=""
+                    src="/images/vda.svg"
+                  />
+                </ExternalLink>
               </div>
 
-              <hr className="my-5" />
+              <hr className="my-5"/>
 
               <h2>BECOME A PARTNER</h2>
               <p>
