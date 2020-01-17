@@ -77,6 +77,17 @@ class Partners extends React.Component<any, any> {
                 </ExternalLink>
               </div>
 
+              <div className="d-flex align-items-center">
+                <ExternalLink href="http://www.spaceport.academy/?fbclid=IwAR1SJNvgxBbd05YayYZYeJYmWb-sq7AgiUshpJ2bvcFvp1GSgMLsw5gIFqE" style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                  <img
+                    width="110px"
+                    height="100px"
+                    alt=""
+                    src="/images/spacechallanges.jpg"
+                  />
+                </ExternalLink>
+              </div>
+
               <hr className="my-5"/>
 
               <h2>BECOME A PARTNER</h2>
