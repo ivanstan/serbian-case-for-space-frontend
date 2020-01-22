@@ -4,6 +4,7 @@ import { translate } from 'react-polyglot'
 
 const img = {
   maxWidth: 315,
+  maxHeight: 484
 }
 
 class Team extends React.Component<any, any> {
