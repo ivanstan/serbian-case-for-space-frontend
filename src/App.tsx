@@ -15,6 +15,7 @@ import { observer } from 'mobx-react'
 import { store } from './stores/Store'
 import { I18n } from 'react-polyglot'
 import { Helmet } from 'react-helmet'
+import ProjectDetail from './pages/ProjectDetail'
 
 @observer
 export default class App extends React.Component<any, any> {
@@ -43,6 +44,7 @@ export default class App extends React.Component<any, any> {
               <Route path="/contact" exact component={Contact}/>
               <Route path="/partners" exact component={Partners}/>
               <Route path="/blog" exact component={Blog}/>
+              <Route path="/project/:id" exact component={ProjectDetail}/>
             </AnimatedSwitch>
             <Footer/>
           </Router>
