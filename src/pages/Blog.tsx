@@ -9,7 +9,7 @@ const image = {
 }
 
 export const title = {
-  fontSize: 84,
+  fontSize: 74,
   color: '#fff',
   position: 'absolute' as 'absolute',
   top: '50%',
@@ -23,7 +23,7 @@ class Blog extends React.Component<any, any> {
     return (
       <div className="mb-5">
         <div style={image} className="mb-5">
-          <h2 style={title}>News</h2>
+          <h2 style={title}>NEWS</h2>
         </div>
         <div className="container mb-5">
           <div className="row mb-5">

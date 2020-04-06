@@ -12,7 +12,7 @@ const image = {
 }
 
 export const title = {
-  fontSize: 84,
+  fontSize: 74,
   color: '#fff',
   position: 'absolute' as 'absolute',
   top: '50%',
@@ -39,10 +39,10 @@ class Partners extends React.Component<any, any> {
 
               <hr className="my-5"/>
 
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center justify-content-between my-3">
                 <ExternalLink href="https://en.bfpe.org/">
                   <img
-                    width="100%"
+                    width="80%"
                     alt="BFPE"
                     src="/images/bfpe.jpg"
                   />
@@ -71,38 +71,38 @@ class Partners extends React.Component<any, any> {
                   />
                 </ExternalLink>
               </div>
-              <div className="d-flex align-items-center">
-                <ExternalLink href="https://www.fondazioneamaldi.it/en/" style={{ display: 'flex' }}>
-                  <img width="65%" alt="FEA" src="/images/fea.jpg"/>
+
+              <div className="d-flex align-items-center justify-content-between my-3">
+                <ExternalLink href="https://www.fondazioneamaldi.it/en/">
+                  <img width="120px" alt="FEA" src="/images/fea.jpg"/>
                 </ExternalLink>
-                <ExternalLink href="https://spacejobfair.com/" style={{ display: 'flex', justifyContent: 'end' }}>
+                <ExternalLink href="https://spacejobfair.com/">
                   <img
-                    width="65%"
+                    width="120px"
                     alt="Space Job Fair"
                     src="/images/spacejobfair.png"
                   />
                 </ExternalLink>
-                <ExternalLink href="http://jedanstepen.org/sr/" style={{ display: 'flex' }}>
+                <ExternalLink href="http://jedanstepen.org/sr/">
                   <img
-                    width="70%"
+                    width="120px"
                     alt="Jedan Stepen"
                     src="/images/1c.png"
                   />
                 </ExternalLink>
-                <ExternalLink href="https://a3space.org/" style={{ marginLeft: 40, marginRight: 20 }}>
+              </div>
+
+              <div className="d-flex align-items-center justify-content-between my-3">
+                <ExternalLink href="https://a3space.org/">
                   <img
                     width="100px"
-                    height="200px"
+                    height="150px"
                     alt=""
                     src="/images/vda.svg"
                   />
                 </ExternalLink>
-              </div>
-
-              <div className="d-flex align-items-center">
                 <ExternalLink
-                  href="http://www.spaceport.academy/?fbclid=IwAR1SJNvgxBbd05YayYZYeJYmWb-sq7AgiUshpJ2bvcFvp1GSgMLsw5gIFqE"
-                  style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+                  href="http://www.spaceport.academy/?fbclid=IwAR1SJNvgxBbd05YayYZYeJYmWb-sq7AgiUshpJ2bvcFvp1GSgMLsw5gIFqE">
                   <img
                     width="110px"
                     height="100px"
@@ -111,8 +111,7 @@ class Partners extends React.Component<any, any> {
                   />
                 </ExternalLink>
                 <ExternalLink
-                  href="https://copernicus-masters.com/"
-                  style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+                  href="https://copernicus-masters.com/">
                   <img
                     width="110px"
                     height="100px"

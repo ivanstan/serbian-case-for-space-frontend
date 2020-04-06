@@ -11,7 +11,7 @@ const image = {
 }
 
 export const title = {
-  fontSize: 84,
+  fontSize: 74,
   color: '#fff',
   position: 'absolute' as 'absolute',
   top: '50%',

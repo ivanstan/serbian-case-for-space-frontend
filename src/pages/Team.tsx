@@ -4,6 +4,7 @@ import { translate } from 'react-polyglot'
 
 const img = {
   maxWidth: 315,
+  minWidth: 315,
   maxHeight: 484,
 }
 
@@ -16,7 +17,7 @@ const image = {
 }
 
 export const title = {
-  fontSize: 84,
+  fontSize: 74,
   color: '#fff',
   position: 'absolute' as 'absolute',
   top: '50%',
@@ -73,7 +74,7 @@ class Team extends React.Component<any, any> {
                     <h2 className="h4">MARKO PAJOVIĆ</h2>
                     {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
                     <p>
-                      Marco is a lawyer with several years of experience in project management. He is one of the
+                      Marko is a lawyer with several years of experience in project management. He is one of the
                       creators and executive members of the project "Forest and Climate", which won several domestic and
                       international awards. Furthermore, he is the project lead for the "SpaceHub" activities, which
                       focuses on commercial utilisation of Earth Observation data satellite data. Prior to that, he
