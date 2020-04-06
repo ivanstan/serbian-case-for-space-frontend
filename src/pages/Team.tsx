@@ -4,13 +4,35 @@ import { translate } from 'react-polyglot'
 
 const img = {
   maxWidth: 315,
-  maxHeight: 484
+  maxHeight: 484,
+}
+
+const image = {
+  backgroundImage: 'url(/images/team.jpg)',
+  backgroundSize: 'cover',
+  height: '50vh',
+  position: 'relative' as 'relative',
+  backgroundPosition: 'center',
+}
+
+export const title = {
+  fontSize: 84,
+  color: '#fff',
+  position: 'absolute' as 'absolute',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  textAlign: 'center' as 'center',
+  width: '100%',
 }
 
 class Team extends React.Component<any, any> {
   public render() {
     return (
       <div className="mb-5">
+        <div style={image} className="mb-5">
+          <h2 style={title}>TEAM</h2>
+        </div>
+
         <div className="container mb-5">
           <div className="row mb-5">
             <div className="col-12 col-lg-8 mx-auto">
@@ -26,13 +48,12 @@ class Team extends React.Component<any, any> {
                     <h2 className="h4">ANJA NAKARADA PEČUJLIĆ</h2>
                     {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
                     <p>
-                      Anja Nakarada Pecujlic is a PhD candidate and assistant
-                      researcher at the University of Cologne where she is
-                      writing her thesis on space law. Prior to that, she was an
-                      External Consultant to the European Space Policy Institute
-                      in Vienna on space law and policy topics. She graduated in
-                      2014 from the Law Faculty of the University of Vienna
-                      specializing in international law.
+                      Anja is a PhD candidate and a research assistant at the University of Cologne, writing her thesis
+                      in space law. Furthermore, since December 2017 she is the Project Manager for a European Space
+                      Agency (ESA)/Cologne University joint project: “ESA Convention Commentary”. Prior to that, from
+                      2014 to 2016, she was an External Consultant of the European Space Policy Institute, Vienna,
+                      Austria. Lastly, Anja is an SGAC's National Point of Contact for Serbia and she serves as a judge
+                      for Manfred Lachs Moot Court competition.
                     </p>
                     {/*</ScrollAnimation>*/}
                   </div>
@@ -52,21 +73,12 @@ class Team extends React.Component<any, any> {
                     <h2 className="h4">MARKO PAJOVIĆ</h2>
                     {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
                     <p>
-                      Marko Pajovic is a freelance researcher with a focus on
-                      international relations, EU, and space policies. In 2017
-                      he founded Serbian Case for Space Foundation which acts as
-                      an independent platform for developing national space
-                      policies and strategies. In 2018 he attended an
-                      International Astronautical Congress in Bremen, where he
-                      presented a paper on the issue of legal use of satellite
-                      data: Case of Republic of Serbia. He is also one of the
-                      executive members on project "Forest and Climate" which
-                      won several awards both domestic and international. In
-                      2019, together with a group of colleagues, he initiated
-                      the "SpaceHub" project in Belgrade, which specializes in
-                      space-related activities. Also, he has an experience in
-                      human rights watch since he coordinated with NGOs in
-                      Serbia on different projects regarding this issue.
+                      Marco is a lawyer with several years of experience in project management. He is one of the
+                      creators and executive members of the project "Forest and Climate", which won several domestic and
+                      international awards. Furthermore, he is the project lead for the "SpaceHub" activities, which
+                      focuses on commercial utilisation of Earth Observation data satellite data. Prior to that, he
+                      worked with a number of NGOs in Serbia on different projects regarding monitoring human rights
+                      violations. Lastly, Marco is the second SGAC's National Point of Contact for Serbia.
                     </p>
                     {/*</ScrollAnimation>*/}
                   </div>
@@ -90,12 +102,10 @@ class Team extends React.Component<any, any> {
                       animateOnce={true}
                     >
                       <p>
-                        Andrej Djurmez is an attorney at law, working as a
-                        junior partner in a regional attorneys office "Simic and
-                        company" since 2014. His main focus is corporate law,
-                        labor law and litigation. He holds a Master degree in
-                        corporate law from the Faculty of Law, University of
-                        Belgrade.
+                        Andrej is a founder and senior partner at Mustur&Djurmez attorneys office. Prior to that, from
+                        2014 to 2019 he worked as a junior partner in a regional attorneys office "Simic and company".
+                        His main focus is corporate law, contract law and litigation. He holds a Master degree in
+                        corporate law from the Faculty of Law, University of Belgrade, Serbia.
                       </p>
                     </ScrollAnimation>
                   </div>

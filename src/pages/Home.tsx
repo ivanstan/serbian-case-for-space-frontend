@@ -75,7 +75,7 @@ class Home extends React.Component<any, any> {
                     alt="Blog"
                   />
                 </Link>
-                <h4 className="h5 text-center">BLOG</h4>
+                <h4 className="h5 text-center">NEWS</h4>
                 <p className="text-center">
                   Read the latest news concerning space community and industry
                 </p>

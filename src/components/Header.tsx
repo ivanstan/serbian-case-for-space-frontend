@@ -32,7 +32,7 @@ class Header extends React.Component<any, any> {
                 {t('Projects')}
               </NavLink>
               <NavLink className="nav-link" exact to="/blog">
-                {t('Blog')}
+                {t('News')}
               </NavLink>
               <NavLink className="nav-link" exact to="/team">
                 {t('Team')}

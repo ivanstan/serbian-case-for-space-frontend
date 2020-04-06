@@ -3,10 +3,32 @@ import { contactMail } from '../config'
 import { translate } from 'react-polyglot'
 import { ExternalLink } from '../components/ExternalLink'
 
+const image = {
+  backgroundImage: 'url(/images/partners.jpg)',
+  backgroundSize: 'cover',
+  height: '50vh',
+  position: 'relative' as 'relative',
+  backgroundPosition: 'center',
+}
+
+export const title = {
+  fontSize: 84,
+  color: '#fff',
+  position: 'absolute' as 'absolute',
+  top: '50%',
+  transform: 'translateY(-50%)',
+  textAlign: 'center' as 'center',
+  width: '100%',
+}
+
 class Partners extends React.Component<any, any> {
   public render() {
     return (
       <div className="mb-5">
+        <div style={image} className="mb-5">
+          <h2 style={title}>PARTNERS</h2>
+        </div>
+
         <div className="container mb-5">
           <div className="row mb-5">
             <div className="col-12 col-lg-8 mx-auto">
@@ -32,12 +54,14 @@ class Partners extends React.Component<any, any> {
                     src="/images/share.jpg"
                   />
                 </ExternalLink>
-                <ExternalLink href="http://jedanstepen.org/sr/" style={{display: 'flex'}}>
-                  <img
-                    width="70%"
-                    alt="Jedan Stepen"
-                    src="/images/1c.png"
-                  />
+                <ExternalLink href="https://www.vda.pt/en/">
+                  <div style={{ backgroundColor: '#000', padding: 10, maxWidth: 200, margin: 10 }}>
+                    <img
+                      width="100%"
+                      alt=""
+                      src="/images/aaa.png"
+                    />
+                  </div>
                 </ExternalLink>
                 <ExternalLink href="https://www.esa.int/About_Us/ECSL_European_Centre_for_Space_Law">
                   <img
@@ -48,26 +72,24 @@ class Partners extends React.Component<any, any> {
                 </ExternalLink>
               </div>
               <div className="d-flex align-items-center">
-                <ExternalLink href="https://www.fondazioneamaldi.it/en/" style={{display: 'flex'}}>
+                <ExternalLink href="https://www.fondazioneamaldi.it/en/" style={{ display: 'flex' }}>
                   <img width="65%" alt="FEA" src="/images/fea.jpg"/>
                 </ExternalLink>
-                <ExternalLink href="https://spacejobfair.com/" style={{display: 'flex', justifyContent: 'end'}}>
+                <ExternalLink href="https://spacejobfair.com/" style={{ display: 'flex', justifyContent: 'end' }}>
                   <img
                     width="65%"
                     alt="Space Job Fair"
                     src="/images/spacejobfair.png"
                   />
                 </ExternalLink>
-                <ExternalLink href="https://www.vda.pt/en/">
-                  <div style={{ backgroundColor: '#000', padding: 10, maxWidth: 200, margin: 10 }}>
-                    <img
-                      width="100%"
-                      alt=""
-                      src="/images/aaa.png"
-                    />
-                  </div>
+                <ExternalLink href="http://jedanstepen.org/sr/" style={{ display: 'flex' }}>
+                  <img
+                    width="70%"
+                    alt="Jedan Stepen"
+                    src="/images/1c.png"
+                  />
                 </ExternalLink>
-                <ExternalLink href="https://a3space.org/" style={{marginLeft: 40, marginRight: 20}}>
+                <ExternalLink href="https://a3space.org/" style={{ marginLeft: 40, marginRight: 20 }}>
                   <img
                     width="100px"
                     height="200px"
@@ -78,12 +100,24 @@ class Partners extends React.Component<any, any> {
               </div>
 
               <div className="d-flex align-items-center">
-                <ExternalLink href="http://www.spaceport.academy/?fbclid=IwAR1SJNvgxBbd05YayYZYeJYmWb-sq7AgiUshpJ2bvcFvp1GSgMLsw5gIFqE" style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                <ExternalLink
+                  href="http://www.spaceport.academy/?fbclid=IwAR1SJNvgxBbd05YayYZYeJYmWb-sq7AgiUshpJ2bvcFvp1GSgMLsw5gIFqE"
+                  style={{ marginLeft: 'auto', marginRight: 'auto' }}>
                   <img
                     width="110px"
                     height="100px"
                     alt=""
                     src="/images/spacechallanges.jpg"
+                  />
+                </ExternalLink>
+                <ExternalLink
+                  href="https://copernicus-masters.com/"
+                  style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+                  <img
+                    width="110px"
+                    height="100px"
+                    alt=""
+                    src="/images/copernicus-masters.png"
                   />
                 </ExternalLink>
               </div>

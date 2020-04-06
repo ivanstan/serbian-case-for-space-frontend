@@ -1,6 +1,6 @@
 class ProjectService {
 
-  public url = 'http://content.ivanstanojevic.me/scs/project?_format=json'
+  public url = 'https://content.ivanstanojevic.me/scs/project?_format=json'
 
   private collection: any[] = []
 
