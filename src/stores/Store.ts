@@ -2,7 +2,6 @@ import { computed, observable } from 'mobx'
 import { promisedComputed } from 'computed-async-mobx'
 
 class Store {
-  /** ToDo: load from local storage */
   @observable locale = window.localStorage.getItem('locale') || 'en';
 
   @computed get messages() {
