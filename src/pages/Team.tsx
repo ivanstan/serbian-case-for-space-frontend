@@ -111,7 +111,7 @@ class Team extends React.Component<any, any> {
                     </ScrollAnimation>
                   </div>
                 </div>
-                <p>Co-founder and COO</p>
+                <p>Co-founder and CCO</p>
               </div>
 
               <div className="mb-5">
