@@ -114,36 +114,36 @@ class Team extends React.Component<any, any> {
                 <p>Co-founder and CCO</p>
               </div>
 
-              <div className="mb-5">
-                <div className="d-lg-flex mb-1">
-                  <img
-                    style={img}
-                    width="100%"
-                    src="/images/bosko.jpg"
-                    alt="Bosko Vojkic"
-                  />
-                  <div className="px-lg-4 mt-4 mt-lg-0">
-                    <h2 className="h4">BOŠKO VOJKIĆ</h2>
-                    <ScrollAnimation
-                      animateIn="fadeInUp"
-                      duration={1}
-                      animateOnce={true}
-                    >
-                      <p>
-                        Bosko Vojkic is Space Law and Telecommunications
-                        professional with previous experience as University
-                        lecturer in Space Law and Policy, ICT Legal Associate
-                        and Telco Business Associate. He holds a Master 2 Degree
-                        in Space Law Activities and Telecommunications from
-                        Paris Saclay / Paris-Sud University and Institute for
-                        Space Law and Telecommunications from Paris, France
-                        (Master thesis: Mega-constellations).
-                      </p>
-                    </ScrollAnimation>
-                  </div>
-                </div>
-                <p>Communication Specialist</p>
-              </div>
+              {/*<div className="mb-5">*/}
+              {/*  <div className="d-lg-flex mb-1">*/}
+              {/*    <img*/}
+              {/*      style={img}*/}
+              {/*      width="100%"*/}
+              {/*      src="/images/bosko.jpg"*/}
+              {/*      alt="Bosko Vojkic"*/}
+              {/*    />*/}
+              {/*    <div className="px-lg-4 mt-4 mt-lg-0">*/}
+              {/*      <h2 className="h4">BOŠKO VOJKIĆ</h2>*/}
+              {/*      <ScrollAnimation*/}
+              {/*        animateIn="fadeInUp"*/}
+              {/*        duration={1}*/}
+              {/*        animateOnce={true}*/}
+              {/*      >*/}
+              {/*        <p>*/}
+              {/*          Bosko Vojkic is Space Law and Telecommunications*/}
+              {/*          professional with previous experience as University*/}
+              {/*          lecturer in Space Law and Policy, ICT Legal Associate*/}
+              {/*          and Telco Business Associate. He holds a Master 2 Degree*/}
+              {/*          in Space Law Activities and Telecommunications from*/}
+              {/*          Paris Saclay / Paris-Sud University and Institute for*/}
+              {/*          Space Law and Telecommunications from Paris, France*/}
+              {/*          (Master thesis: Mega-constellations).*/}
+              {/*        </p>*/}
+              {/*      </ScrollAnimation>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*  <p>Communication Specialist</p>*/}
+              {/*</div>*/}
 
               <div className="mb-5">
                 <div className="d-lg-flex mb-1">
@@ -173,6 +173,31 @@ class Team extends React.Component<any, any> {
                   </div>
                 </div>
                 <p>Chief Technical Officer</p>
+              </div>
+
+              <div className="mb-5">
+                <div className="d-lg-flex mb-1">
+                  <img
+                    style={img}
+                    width="100%"
+                    src="/images/dalibor.jpg"
+                    alt="Ivan Stanojevic"
+                  />
+                  <div className="px-lg-4 mt-4 mt-lg-0">
+                    <h2 className="h4">DALIBOR DJURAN</h2>
+                    <ScrollAnimation
+                      animateIn="fadeInUp"
+                      duration={1}
+                      animateOnce={true}
+                    >
+                      <p>
+                        Works at Planet as Director for Spacecraft Manufacturing and NPI. Prior to that, Dalibor was
+                        Managing Vice President at Gartner and in addition, he is a Co-founder and COO of Drones-X Inc.
+                      </p>
+                    </ScrollAnimation>
+                  </div>
+                </div>
+                <p>Advisor</p>
               </div>
             </div>
           </div>

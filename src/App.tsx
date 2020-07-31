@@ -17,6 +17,8 @@ import { I18n } from 'react-polyglot'
 import { Helmet } from 'react-helmet'
 import ProjectDetail from './pages/ProjectDetail'
 import NewsDetail from './pages/NewsDetail'
+import Privacy from './pages/Privacy'
+import Terms from './pages/Terms'
 
 @observer
 export default class App extends React.Component<any, any> {
@@ -47,6 +49,8 @@ export default class App extends React.Component<any, any> {
               <Route path="/partners" exact component={Partners}/>
               <Route path="/news" exact component={Blog}/>
               <Route path="/news/:id" exact component={NewsDetail}/>
+              <Route path="/terms-of-use" exact component={Terms}/>
+              <Route path="/privacy-policy" exact component={Privacy}/>
             </AnimatedSwitch>
             <Footer/>
           </Router>
