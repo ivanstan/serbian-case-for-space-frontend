@@ -22,7 +22,7 @@ class Hackaton extends React.Component<any, any> {
             <div className="col-12 col-lg-8 mx-auto">
               <h2>{t('HACKATHON')}</h2>
               <form
-                action={'https://formspree.io/ivanstan@gmail.com'}
+                action={'https://formspree.io/scs@serbiancaseforspace.com'}
                 method="POST"
               >
                 <div className="form-group">
