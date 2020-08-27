@@ -19,6 +19,7 @@ import ProjectDetail from './pages/ProjectDetail'
 import NewsDetail from './pages/NewsDetail'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
+import Hackaton from './pages/Hackaton'
 
 @observer
 export default class App extends React.Component<any, any> {
@@ -51,6 +52,7 @@ export default class App extends React.Component<any, any> {
               <Route path="/news/:id" exact component={NewsDetail}/>
               <Route path="/terms-of-use" exact component={Terms}/>
               <Route path="/privacy-policy" exact component={Privacy}/>
+              <Route path="/hackathon" exact component={Hackaton}/>
             </AnimatedSwitch>
             <Footer/>
           </Router>

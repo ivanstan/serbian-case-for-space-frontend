@@ -4,7 +4,7 @@ import { translate } from 'react-polyglot'
 
 class Contact extends React.Component<any, any> {
   public render() {
-    const { t } = this.props;
+    const { t } = this.props
 
     return (
       <div className="mb-5">
@@ -16,19 +16,6 @@ class Contact extends React.Component<any, any> {
                 action={'https://formspree.io/' + contactMail}
                 method="POST"
               >
-                <div className="form-group">
-                  <label htmlFor="email">
-                    {t('Email')} <span className="text-danger">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    name="email"
-                    id="email"
-                    required
-                  />
-                </div>
-
                 <div className="d-flex">
                   <div className="form-group flex-grow-1 mr-3">
                     <label htmlFor="firstName">
@@ -53,6 +40,19 @@ class Contact extends React.Component<any, any> {
                       id="lastName"
                     />
                   </div>
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="email">
+                    {t('Email')} <span className="text-danger">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="email"
+                    id="email"
+                    required
+                  />
                 </div>
 
                 <div className="form-group">
@@ -81,11 +81,13 @@ class Contact extends React.Component<any, any> {
                   />
                 </div>
 
-                <input
-                  className="btn btn-lg btn-primary"
-                  type="submit"
-                  value={t('Submit')}
-                />
+                <div className="d-flex justify-content-center">
+                  <input
+                    className="btn btn-lg btn-primary"
+                    type="submit"
+                    value={t('Submit')}
+                  />
+                </div>
               </form>
             </div>
           </div>
