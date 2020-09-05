@@ -20,7 +20,56 @@ class Hackaton extends React.Component<any, any> {
         <div className="container mb-5">
           <div className="row mb-5">
             <div className="col-12 col-lg-8 mx-auto">
-              <h2>{t('HACKATHON')}</h2>
+              <h1 className={'mb-4'}>{t('HACKATHON')}</h1>
+
+              <section>
+                <h2 className={'mb-4'}>Challenges</h2>
+                <article>
+                  <h1 className={'h4'}>Climate change</h1>
+                  <div className={'d-md-flex'}>
+                    <img src={'/images/hackathon/thermometer.svg'} alt={'Climate change'} className={'d-block mx-auto my-4 mr-md-4'} style={{maxWidth: 200}}/>
+                    <p>
+                      Changes in the global climate pose a threat to our societies, economies and way of living
+                      affecting
+                      our
+                      capacity to produce food, store clean water and keep the population safe. Earth Observation data
+                      can
+                      be
+                      useful for understanding, forecasting, monitoring, reacting and recovering from these changes.
+                      Using
+                      Planet data, your challenge is to provide novel solutions that can be used to help local
+                      communities
+                      respond to climate events either proactive or reactively. Planet’s imaging products are
+                      particularly
+                      useful for measuring water levels and due to the near daily cadence, reacting fast to natural
+                      hazards.
+                    </p>
+                  </div>
+                </article>
+                <article>
+                  <h1 className={'h4'}>Agriculture</h1>
+                  <div className={'d-md-flex'}>
+                    <img src={'/images/hackathon/plant.svg'} alt={'Agriculture'} className={'d-block mx-auto my-4 mr-md-4'} style={{maxWidth: 200}}/>
+                    <p>
+                      Farmers around the world have been using Earth Observation and other remote sensing data, such as
+                      Sentinel, to plan, monitor and analyze their fields, crops and yield. Planet data brings along a
+                      higher
+                      cadence and resolution that allows to see more detailed change at a near daily frequency. In the
+                      Balkans,
+                      different challenges have risen due to the COVID-19 global pandemic: stay-at-home policies have
+                      affected
+                      yield, disruptions in the supply chain made it difficult to keep crops healthy, among others. Your
+                      challenge is to use Planet data together with other ancillary regional data to help regional
+                      farmers
+                      and
+                      governments to understand the effects of the pandemic on the local agricultural industries
+                      providing
+                      creative solutions for field monitoring.
+                    </p>
+                  </div>
+                </article>
+              </section>
+
               <form
                 action={'https://formspree.io/scs@serbiancaseforspace.com'}
                 method="POST"
@@ -81,8 +130,8 @@ class Hackaton extends React.Component<any, any> {
                     {t('Challenge')} <span className="text-danger">*</span>
                   </label>
                   <select name="challenge" className="form-control">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
+                    <option value="Climate change">Climate change</option>
+                    <option value="Agriculture">Agriculture</option>
                   </select>
                 </div>
 
@@ -90,9 +139,11 @@ class Hackaton extends React.Component<any, any> {
                   <label>Do you have a team? <span className="text-danger">*</span></label>
                   <div>
                     <label className="radio-inline mr-4"><input type="radio" name="optradio"
-                                                                onChange={e => this.hasTeamChange(true)} checked={this.state.hasTeam}/> Yes</label>
+                                                                onChange={e => this.hasTeamChange(true)}
+                                                                checked={this.state.hasTeam}/> Yes</label>
                     <label className="radio-inline"><input type="radio" name="optradio"
-                                                           onChange={e => this.hasTeamChange(false)} checked={!this.state.hasTeam}/> No</label>
+                                                           onChange={e => this.hasTeamChange(false)}
+                                                           checked={!this.state.hasTeam}/> No</label>
                   </div>
                 </div>
 
