@@ -16,7 +16,7 @@ class HackathonRegistration extends React.Component<any> {
 
     return (
       <form
-        action={'https://formspree.io/scs@serbiancaseforspace.com'}
+        action="https://formspree.io/scs@serbiancaseforspace.com"
         method="POST"
       >
         <div className="form-group">
@@ -24,11 +24,11 @@ class HackathonRegistration extends React.Component<any> {
             {t('Email')} <span className="text-danger">*</span>
           </label>
           <input
-            type="text"
             className="form-control"
-            name="email"
             id="email"
+            name="email"
             required
+            type="text"
           />
         </div>
 
@@ -38,11 +38,11 @@ class HackathonRegistration extends React.Component<any> {
               {t('First name')} <span className="text-danger">*</span>
             </label>
             <input
-              type="text"
               className="form-control"
-              name="first-name"
               id="firstName"
+              name="first-name"
               required
+              type="text"
             />
           </div>
 
@@ -64,7 +64,7 @@ class HackathonRegistration extends React.Component<any> {
           <label htmlFor="subject">
             {t('Country')} <span className="text-danger">*</span>
           </label>
-          <select name="country" className="form-control" required>
+          <select className="form-control" name="country" required>
             <option value="Albania">Albania</option>
             <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
             <option value="Bulgaria">Bulgaria</option>
@@ -81,7 +81,7 @@ class HackathonRegistration extends React.Component<any> {
           <label htmlFor="challenge">
             {t('Challenge')} <span className="text-danger">*</span>
           </label>
-          <select name="challenge" className="form-control">
+          <select className="form-control" name="challenge">
             <option value="Climate change">Climate change</option>
             <option value="Agriculture">Agriculture</option>
             <option value="Smart Cities">Smart Cities</option>
@@ -89,33 +89,53 @@ class HackathonRegistration extends React.Component<any> {
         </div>
 
         <div className="form-group">
-          <label>Do you have a team? <span className="text-danger">*</span></label>
+          <label>
+            Do you have a team? <span className="text-danger">*</span>
+          </label>
           <div>
-            <label className="radio-inline mr-4"><input type="radio" name="optradio"
-                                                        onChange={e => this.hasTeamChange(true)}
-                                                        checked={this.state.hasTeam}/> Yes</label>
-            <label className="radio-inline"><input type="radio" name="optradio"
-                                                   onChange={e => this.hasTeamChange(false)}
-                                                   checked={!this.state.hasTeam}/> No</label>
+            <label className="radio-inline mr-4">
+              <input
+                checked={this.state.hasTeam}
+                name="optradio"
+                onChange={e => this.hasTeamChange(true)}
+                type="radio"
+              />
+              Yes
+            </label>
+            <label className="radio-inline">
+              <input
+                checked={!this.state.hasTeam}
+                name="optradio"
+                onChange={e => this.hasTeamChange(false)}
+                type="radio"
+              />
+              No
+            </label>
           </div>
         </div>
 
-        {this.state.hasTeam && <div className="form-group">
-          <label htmlFor="team">
-            {t('Team name')} <span className="text-danger">*</span>
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            name="team"
-            id="team"
-          />
-          <small className="text-muted">Each member of the team should register with the same team name.</small>
-        </div>}
+        {this.state.hasTeam && (
+          <div className="form-group">
+            <label htmlFor="team">
+              {t('Team name')} <span className="text-danger">*</span>
+            </label>
+            <input className="form-control" id="team" name="team" type="text" />
+            <small className="text-muted">
+              Each member of the team should register with the same team name.
+            </small>
+          </div>
+        )}
 
         <div className="form-check">
-          <input type="checkbox" className="form-check-input" id="terms" required/>
-          <label className="form-check-label" htmlFor="terms">I accept <Link to={'/terms-of-use'}>terms of use</Link>.</label>
+          <input
+            className="form-check-input"
+            id="terms"
+            required
+            type="checkbox"
+          />
+          <label className="form-check-label" htmlFor="terms">
+            I accept <Link to="/terms-of-use">terms of use</Link>.
+          </label>
         </div>
 
         <div className="d-flex justify-content-center">
