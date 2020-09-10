@@ -100,7 +100,7 @@ class HackathonRegistration extends React.Component<any> {
                 onChange={e => this.hasTeamChange(true)}
                 type="radio"
               />
-              Yes
+              &nbsp;Yes
             </label>
             <label className="radio-inline">
               <input
@@ -109,7 +109,7 @@ class HackathonRegistration extends React.Component<any> {
                 onChange={e => this.hasTeamChange(false)}
                 type="radio"
               />
-              No
+              &nbsp;No
             </label>
           </div>
         </div>
