@@ -84,6 +84,7 @@ class HackathonRegistration extends React.Component<any> {
           <select name="challenge" className="form-control">
             <option value="Climate change">Climate change</option>
             <option value="Agriculture">Agriculture</option>
+            <option value="Smart Cities">Smart Cities</option>
           </select>
         </div>
 
