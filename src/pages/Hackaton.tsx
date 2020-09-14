@@ -1,6 +1,23 @@
 import React from 'react'
 import { translate } from 'react-polyglot'
 import HackathonRegistration from './HackathonRegistration'
+import Popup from 'reactjs-popup'
+
+const image = {
+  backgroundImage: 'url(\'images/hackathon/belgrade.png\')',
+  backgroundPosition: 'center 5%',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+}
+
+const header = {
+  height: 300,
+  color: '#fff',
+}
+
+const sponsorRow = {
+  height: 250
+}
 
 class Hackaton extends React.Component<any, any> {
 
@@ -9,13 +26,51 @@ class Hackaton extends React.Component<any, any> {
 
     return (
       <div className="mb-5">
+        <div style={image}>
+          <div className="container">
+            <div className="row mb-5">
+              <div className="col-12 col-lg-8 mx-auto pt-5" style={header}>
+                <h1 style={{ fontSize: 44, fontWeight: 'bold' }}>{t('Planet Balkan Hackathon')}</h1>
+                <small>organized by Serbian Case for Space Foundation</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="container mb-5">
           <div className="row mb-5">
             <div className="col-12 col-lg-8 mx-auto">
-              <h1 className={'mb-4'}>{t('HACKATHON')}</h1>
 
-              <section>
-                <h2 className={'mb-4'}>Challenges</h2>
+              <section className="d-flex justify-content-around mb-5">
+                <img src="images/logo/logo.svg" alt="SCS"/>
+                <img src="images/hackathon/planet.jpg" alt="Planet" width="44%"/>
+              </section>
+
+              <section className={'mt-5 mb-5'}>
+                <p>The Serbian Case for Space Foundation, together with Planet, a San Francisco based Earth imaging
+                  company, is organizing the very first “Planet Balkan Hackathon”. This first-of-its-kind online event
+                  will offer a unique opportunity to teams coming from Albania, Bosnia and Herzegovina, Bulgaria,
+                  Croatia, Montenegro, North Macedonia, Romania, Serbia, and Slovenia to compete in one of three
+                  thematic challenges using Planets satellite data - Climate Change, Agriculture or Smart Cities – and
+                  win great prizes.</p>
+                <p>Serbian Case for Space Foundation (SCS) is a think tank organization, established with the aim to
+                  promote the importance and benefits of Serbia’s engagement in the space domain, by educating and
+                  encouraging the development of space eco-system in Serbia from bottom-up. SCS's main initiatives and
+                  activities are:</p>
+                <ul>
+                  <li>Raising the awareness of the general public in Serbia regarding numerous advantages
+                    that space systems offer and diverse applications that they provide
+                  </li>
+                  <li>Establishing a network
+                    between the private sector, academia and governmental agencies in Serbia, and connecting them to
+                    international partners
+                  </li>
+                  <li>Organizing targeted lectures, workshops, webinars and hackathons</li>
+                </ul>
+              </section>
+
+              <section className={'mb-5'}>
+                <h2 className={'mb-2'}>Challenges</h2>
                 <article>
                   <h1 className={'h4'}>Climate change</h1>
                   <div className={'d-md-flex'}>
@@ -82,8 +137,63 @@ class Hackaton extends React.Component<any, any> {
                 </article>
               </section>
 
-              <HackathonRegistration/>
+              <section className={'mb-5'}>
+                <h2 className={'mb-2'}>Prizes</h2>
+                Prizes will include following:
 
+                <ul>
+                  <li>Winning team</li>
+                  <ul>
+                    <li>Monetary award of 500 USD</li>
+                    <li>3-month free account to utilise Planet’s API for the winning team (5 people) with access to
+                      PlanetScope Archive
+                    </li>
+                    <li>AOI of 1000 sqm</li>
+                    <li>Download quota of 20000sqm</li>
+                  </ul>
+                  <li>Runner up</li>
+                  <ul>
+                    <li>3-month free account to utilise Planet’s API for the winning team (5 people) with access to
+                      PlanetScope Archive
+                    </li>
+                    <li>AOI of 1000 sqm</li>
+                    <li>Download quota of 10000sqm</li>
+                  </ul>
+                  <li>3rd place</li>
+                  <ul>
+                    <li>1-month free account to utilise Planet’s API for the winning team (5 people) with access to
+                      PlanetScope Archive
+                    </li>
+                    <li>AOI of 1000 sqm</li>
+                    <li>Download quota of 5000sqm</li>
+                  </ul>
+                </ul>
+              </section>
+
+              <section className={'mb-5'}>
+                <p className={'h5 text-center'}>Participants will be able to join various interesting workshops and they
+                  will be mentored by experts
+                  in the field</p>
+              </section>
+
+              <section className="d-flex justify-content-center">
+                <Popup trigger={<button className="btn btn-lg btn-primary mb-5">Register</button>} position="center center"
+                       modal>
+                  <div style={{ background: '#fff', boxShadow: '0px 0px 10px 0px rgba(55,54,54,1)' }} className={'p-5'}>
+                    <HackathonRegistration/>
+                  </div>
+                </Popup>
+              </section>
+
+              <section className={'mb-5'}>
+                <h2 className={'mb-2'}>Sponsors</h2>
+                <h3 className="h5 text-muted text-center">GOLD</h3>
+                <div style={sponsorRow}/>
+                <h3 className="h5 text-muted text-center">SILVER</h3>
+                <div style={sponsorRow} className={'d-flex justify-content-center'}>
+                  <img src={'images/hackathon/vekom.jpg'} alt={"Vekom"}/>
+                </div>
+              </section>
             </div>
           </div>
         </div>
