@@ -2,6 +2,7 @@ import React from 'react'
 import { translate } from 'react-polyglot'
 import HackathonRegistration from './HackathonRegistration'
 import Popup from 'reactjs-popup'
+import { ExternalLink } from '../components/ExternalLink'
 
 const image = {
   backgroundImage: 'url(\'images/hackathon/belgrade.png\')',
@@ -12,11 +13,10 @@ const image = {
 
 const header = {
   height: 300,
-  color: '#fff',
 }
 
 const sponsorRow = {
-  height: 250
+  height: 250,
 }
 
 class Hackaton extends React.Component<any, any> {
@@ -30,8 +30,10 @@ class Hackaton extends React.Component<any, any> {
           <div className="container">
             <div className="row mb-5">
               <div className="col-12 col-lg-8 mx-auto pt-5" style={header}>
-                <h1 style={{ fontSize: 44, fontWeight: 'bold' }}>{t('Planet Balkan Hackathon')}</h1>
-                <small>organized by Serbian Case for Space Foundation</small>
+                <section className="d-flex justify-content-around mb-5 p-4" style={{ background: '#fff' }}>
+                  <img src="images/logo/logo.svg" alt="SCS"/>
+                  <img src="images/hackathon/planet.jpg" alt="Planet" width="44%"/>
+                </section>
               </div>
             </div>
           </div>
@@ -39,11 +41,13 @@ class Hackaton extends React.Component<any, any> {
 
         <div className="container mb-5">
           <div className="row mb-5">
-            <div className="col-12 col-lg-8 mx-auto">
+            <div className="col-12 col-lg-12 mx-auto">
 
-              <section className="d-flex justify-content-around mb-5">
-                <img src="images/logo/logo.svg" alt="SCS"/>
-                <img src="images/hackathon/planet.jpg" alt="Planet" width="44%"/>
+              <section className="justify-content-around mb-5">
+                <h1 style={{ fontSize: 44, fontWeight: 'bold' }}>{t('Planet Balkan Hackathon')}</h1>
+                <small style={{ position: 'relative', top: -18 }}>organized by Serbian Case for Space Foundation</small>
+                <h2 className={'h5 mb-0'}>31. October - 1. November</h2>
+                <p>Online event</p>
               </section>
 
               <section className={'mt-5 mb-5'}>
@@ -53,6 +57,8 @@ class Hackaton extends React.Component<any, any> {
                   Croatia, Montenegro, North Macedonia, Romania, Serbia, and Slovenia to compete in one of three
                   thematic challenges using Planets satellite data - Climate Change, Agriculture or Smart Cities – and
                   win great prizes.</p>
+
+                <img src="images/logo/logo.svg" alt="SCS" width="8%" style={{float: 'left'}} className={'mr-3 ml-3'}/>
                 <p>Serbian Case for Space Foundation (SCS) is a think tank organization, established with the aim to
                   promote the importance and benefits of Serbia’s engagement in the space domain, by educating and
                   encouraging the development of space eco-system in Serbia from bottom-up. SCS's main initiatives and
@@ -67,10 +73,20 @@ class Hackaton extends React.Component<any, any> {
                   </li>
                   <li>Organizing targeted lectures, workshops, webinars and hackathons</li>
                 </ul>
+
+                <img src="images/hackathon/planet.jpg" alt="Planet" width="13%" style={{float: 'left'}} className={'mt-3 mr-3 ml-3'}/>
+                <p>Planet is the leading provider of global, near-daily satellite imagery data and insights. Planet is
+                  driven by a mission to image all of Earth’s landmass every day, and make global change visible,
+                  accessible and actionable. Founded in 2010 by three NASA scientists, Planet designs, builds, and
+                  operates the largest earth observation fleet of satellites, and provides the online software, tools
+                  and analytics needed to deliver data to users. Decision makers in business, government, and within
+                  organizations can use Planet's data and machine learning-powered analytics to develop new
+                  technologies, drive revenue, power research, and make informed, timely decisions to solve our world's
+                  toughest challenges. To learn more visit <ExternalLink>www.planet.com</ExternalLink> and follow us on Twitter at @planetlabs.</p>
               </section>
 
               <section className={'mb-5'}>
-                <h2 className={'mb-2'}>Challenges</h2>
+                <h2 className={'mb-2 text-center'}>Challenges</h2>
                 <article>
                   <h1 className={'h4'}>Climate change</h1>
                   <div className={'d-md-flex'}>
@@ -138,36 +154,55 @@ class Hackaton extends React.Component<any, any> {
               </section>
 
               <section className={'mb-5'}>
-                <h2 className={'mb-2'}>Prizes</h2>
-                Prizes will include following:
-
-                <ul>
-                  <li>Winning team</li>
-                  <ul>
-                    <li>Monetary award of 500 USD</li>
-                    <li>3-month free account to utilise Planet’s API for the winning team (5 people) with access to
-                      PlanetScope Archive
-                    </li>
-                    <li>AOI of 1000 sqm</li>
-                    <li>Download quota of 20000sqm</li>
-                  </ul>
-                  <li>Runner up</li>
-                  <ul>
-                    <li>3-month free account to utilise Planet’s API for the winning team (5 people) with access to
-                      PlanetScope Archive
-                    </li>
-                    <li>AOI of 1000 sqm</li>
-                    <li>Download quota of 10000sqm</li>
-                  </ul>
-                  <li>3rd place</li>
-                  <ul>
-                    <li>1-month free account to utilise Planet’s API for the winning team (5 people) with access to
-                      PlanetScope Archive
-                    </li>
-                    <li>AOI of 1000 sqm</li>
-                    <li>Download quota of 5000sqm</li>
-                  </ul>
-                </ul>
+                <h2 className={'mb-5 text-center'}>Prizes</h2>
+                <div className="card-deck mb-3 text-center">
+                  <div className="card mb-4 box-shadow">
+                    <div className="card-header">
+                      <h4 className="my-0 font-weight-normal">Winning team</h4>
+                    </div>
+                    <div className="card-body">
+                      {/*<h1 className="card-title pricing-card-title">$0 <small className="text-muted">/ mo</small></h1>*/}
+                      <ul className="mt-3 mb-4 text-left">
+                        <li>Monetary award of 500 USD</li>
+                        <li>3-month free account to utilise Planet’s API for the winning team (5 people) with access to
+                          PlanetScope Archive
+                        </li>
+                        <li>AOI of 1000 sqm</li>
+                        <li>Download quota of 20000sqm</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="card mb-4 box-shadow">
+                    <div className="card-header">
+                      <h4 className="my-0 font-weight-normal">Runner up</h4>
+                    </div>
+                    <div className="card-body">
+                      {/*<h1 className="card-title pricing-card-title">$15 <small className="text-muted">/ mo</small></h1>*/}
+                      <ul className="text-left mt-3 mb-4">
+                        <li>3-month free account to utilise Planet’s API for the winning team (5 people) with access to
+                          PlanetScope Archive
+                        </li>
+                        <li>AOI of 1000 sqm</li>
+                        <li>Download quota of 10000sqm</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="card mb-4 box-shadow">
+                    <div className="card-header">
+                      <h4 className="my-0 font-weight-normal">3rd place</h4>
+                    </div>
+                    <div className="card-body">
+                      {/*<h1 className="card-title pricing-card-title">$29 <small className="text-muted">/ mo</small></h1>*/}
+                      <ul className="text-left mt-3 mb-4">
+                        <li>1-month free account to utilise Planet’s API for the winning team (5 people) with access to
+                          PlanetScope Archive
+                        </li>
+                        <li>AOI of 1000 sqm</li>
+                        <li>Download quota of 5000sqm</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </section>
 
               <section className={'mb-5'}>
@@ -177,7 +212,8 @@ class Hackaton extends React.Component<any, any> {
               </section>
 
               <section className="d-flex justify-content-center">
-                <Popup trigger={<button className="btn btn-lg btn-primary mb-5">Register</button>} position="center center"
+                <Popup trigger={<button className="btn btn-lg btn-primary mb-5">Register</button>}
+                       position="center center"
                        modal>
                   <div style={{ background: '#fff', boxShadow: '0px 0px 10px 0px rgba(55,54,54,1)' }} className={'p-5'}>
                     <HackathonRegistration/>
@@ -191,7 +227,7 @@ class Hackaton extends React.Component<any, any> {
                 <div style={sponsorRow}/>
                 <h3 className="h5 text-muted text-center">SILVER</h3>
                 <div style={sponsorRow} className={'d-flex justify-content-center'}>
-                  <img src={'images/hackathon/vekom.jpg'} alt={"Vekom"}/>
+                  <img src={'images/hackathon/vekom.jpg'} alt={'Vekom'}/>
                 </div>
               </section>
             </div>
