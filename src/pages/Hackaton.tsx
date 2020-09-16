@@ -31,7 +31,7 @@ class Hackaton extends React.Component<any, any> {
             <div className="row mb-5">
               <div className="col-12 col-lg-8 mx-auto pt-5" style={header}>
                 <section className="d-flex justify-content-around mb-5 p-4" style={{ background: '#fff' }}>
-                  <img src="images/logo/logo.svg" alt="SCS"/>
+                  <img src="images/logo/logo.svg" alt="SCS" width="25%"/>
                   <img src="images/hackathon/planet.jpg" alt="Planet" width="44%"/>
                 </section>
               </div>
