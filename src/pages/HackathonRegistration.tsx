@@ -17,7 +17,7 @@ class HackathonRegistration extends React.Component<any> {
 
     return (
       <form
-        action="https://formspree.io/scs@serbiancaseforspace.com"
+        action="https://formspree.io/maylyvge"
         method="POST"
       >
         <div className="form-group">
@@ -116,18 +116,29 @@ class HackathonRegistration extends React.Component<any> {
         </div>
 
         {this.state.hasTeam && (
-          <div className="form-group">
-            <label htmlFor="team">
-              {t('Team name')} <span className="text-danger">*</span>
-            </label>
-            <input className="form-control" id="team" name="team" type="text"/>
-            <small className="text-muted">
-              Each member of the team should register with the same team name.
-            </small>
-          </div>
+          <>
+            <div className="form-group">
+              <label htmlFor="team">
+                {t('Team name')} <span className="text-danger">*</span>
+              </label>
+              <input className="form-control" id="team" name="team" type="text"/>
+              <small className="text-muted">
+                Each member of the team should register with the same team name.
+              </small>
+            </div>
+
+            <div>
+              <ul className="pl-4">
+                <li>maximum number of team members is 4.</li>
+                <li>number of teams is limited and it is on the first come first serve basis, <br/>
+                  however advantage will be given to the geographical representation.
+                </li>
+              </ul>
+            </div>
+          </>
         )}
 
-        <div className="form-check">
+        <div className="form-check mb-2">
           <input
             className="form-check-input"
             id="terms"
@@ -135,8 +146,7 @@ class HackathonRegistration extends React.Component<any> {
             type="checkbox"
           />
           <label className="form-check-label" htmlFor="terms">
-            I accept
-            <Link to="/terms-of-use">terms of use</Link>.
+            I accept <Link to="/terms-of-use">Terms Of Use</Link>.
           </label>
         </div>
 
