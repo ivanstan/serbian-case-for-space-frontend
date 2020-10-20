@@ -12,23 +12,39 @@ const image = {
 }
 
 const header = {
-  height: 300,
+  height: 350,
+  color: '#fff',
+  fontWeight: 'bold' as 'bold',
+  marginTop: 70,
 }
 
 const sponsorRow = {
   height: 250,
+  position: 'relative' as 'relative',
+  left: 45,
 }
 
 const blue = {
-  width: '35%',
-  height: 300,
-  background: '#4E81B9',
-  float: 'left' as 'left',
+  backgroundColor: '#78a2d1',
+  color: '#fff',
+  overflow: 'hidden',
 }
 
-const blueContainer = {
+const join = {
+  backgroundColor: '#3e435a',
+  display: 'inline-block',
+  margin: -15,
+  padding: '1rem',
+  paddingLeft: '2rem',
+}
 
-};
+const win = {
+  fontFamily: 'Courier',
+}
+
+const logo = {
+  background: '#fff',
+}
 
 class Hackaton extends React.Component<any, any> {
 
@@ -38,39 +54,56 @@ class Hackaton extends React.Component<any, any> {
     return (
       <div className="mb-5">
         <div style={image}>
-          {/*<div style={blue}>*/}
-          {/*  <div style={blueContainer}>*/}
-          {/*    <h1>Planet Balkan Hackathon</h1>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
-          <div className="container">
-            <div className="row mb-5">
-              <div className="col-7 col-lg-7 mx-auto pt-5" style={header}>
-                <section className="d-flex justify-content-around mb-5 p-4" style={{ background: '#fff' }}>
-                  <div className="d-flex flex-column">
-                    <img src="images/logo/logo.svg" alt="SCS" width="70%" className="m-auto"/>
-                    <span className="text-center">Serbian Case For Space</span>
+          <div style={{ background: 'rgba(120, 162, 209, 0.5)' }}>
+
+            <div className="container d-none d-lg-block">
+              <div className="row mb-5">
+                <div className="col-4 col-lg-4 mx-auto pt-5" style={blue}>
+                  <div style={join}>
+                    JOIN US FOR THE VERY FIRST
                   </div>
-                  <img src="images/hackathon/planet.jpg" alt="Planet" width="44%"/>
-                </section>
+                  <h1 className={'pt-5 pl-4'}>PLANET<br/>BALKAN<br/>HACKATHON</h1>
+                  <div style={win} className={'pl-4 pt-2'}>
+                    WIN AWESOME PRIZES AND MEET <br/>TEAMS ACROSS THE REGION.
+                  </div>
+                </div>
+
+                <div className="col-7 col-lg-7 mx-auto pt-5" style={header}>
+                  <h2 className={'text-center h1 text-bold'}>ONLINE EVENT<br/>31 OCTOBER - 1 NOVEMBER, 2020</h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div className="container mb-5">
-          <div className="row mb-5">
-            <div className="col-12 col-lg-12 mx-auto">
-
+          <div className="row">
+            <div className={'col-lg-6'}>
               <section className="justify-content-around mb-5">
                 <h1 style={{ fontSize: 44, fontWeight: 'bold' }}>{t('Planet Balkan Hackathon')}</h1>
                 <small style={{ position: 'relative', top: -18 }}>organized by Serbian Case for Space Foundation</small>
-                <h2 className={'h5 mb-0'}>31. October - 1. November</h2>
+                <h2 className={'h5 mb-0'}>31 October - 1 November, 2020</h2>
                 <p>Online event</p>
               </section>
+            </div>
+            <div className={'col-lg-6'}>
+              <section className="d-flex flex-row-reverse mb-5 p-4">
+                <div className="d-flex flex-column" style={logo}>
+                  <img src="images/logo/logo.svg" alt="SCS" width="70%" className="m-auto"/>
+                  <span className="text-center">Serbian Case For Space</span>
+                </div>
+                <div style={{width: 250}}>
+                  <img src="images/hackathon/planet.jpg" alt="Planet" width="85%" className={'mt-2'}/>
+                </div>
+              </section>
+            </div>
+          </div>
 
+          <div className="row mb-5">
+            <div className="col-12 col-lg-12 mx-auto">
               <section>
-                <p className="mb-5">The Serbian Case for Space Foundation, together with Planet, a San Francisco based Earth imaging
+                <p className="mb-5">The Serbian Case for Space Foundation, together with Planet, a San Francisco based
+                  Earth imaging
                   company, is organizing the very first “Planet Balkan Hackathon”. This first-of-its-kind online event
                   will offer a unique opportunity to teams coming from Albania, Bosnia and Herzegovina, Bulgaria,
                   Croatia, Montenegro, North Macedonia, Romania, Serbia, and Slovenia to compete in one of three
@@ -212,6 +245,12 @@ class Hackaton extends React.Component<any, any> {
                 <p className={'h5 text-center'}>Participants will be able to join various interesting workshops and they
                   will be mentored by experts
                   in the field</p>
+                <ul className={'mt-5'}>
+                  <li> Registrations are open until 21 October 2020</li>
+                  <li>  Participants are welcomed to register as individuals or as teams (maximum number of participants per team is 5). If you register individually, you will be connected to other individual participants in order to form a team
+                  </li>
+                  <li>Planet Balkan Hackathon is an online event and all you and your team need, is your laptops, creative minds and positive energy</li>
+                </ul>
               </section>
 
               <section className="d-flex justify-content-center">
@@ -226,33 +265,61 @@ class Hackaton extends React.Component<any, any> {
 
               <section className={'mt-2 mb-5'}>
                 <h2 className={'mb-5 text-center'}>Organizers</h2>
-                <img src="images/logo/logo.svg" alt="SCS" width="8%" style={{float: 'left'}} className={'mr-3 ml-3'}/>
-                <p className={"mt-3"}>Serbian Case for Space Foundation (SCS) is a think tank organization, established with the aim to
+                <div>
+                <div className="d-flex flex-column float-left mr-3" style={logo}>
+                  <img src="images/logo/logo.svg" alt="SCS" width="70" className="m-auto"/>
+                  <span className="text-center">Serbian Case For Space</span>
+                </div>
+                <p className={'mt-3'}>Serbian Case for Space Foundation (SCS) is a think tank organization, established
+                  with the aim to
                   promote the importance and benefits of Serbia’s engagement in the space domain, by educating and
                   encouraging the development of space eco-system in Serbia from bottom-up.</p>
+                </div>
 
-                <img src="images/hackathon/planet.jpg" alt="Planet" width="13%" style={{float: 'left'}} className={'mt-3 mr-3 ml-3'}/>
+                <img src="images/hackathon/planet.jpg" alt="Planet" width="13%" style={{ float: 'left' }}
+                     className={'mt-3 mr-4 ml-3'}/>
                 <p>Planet is the leading provider of global, near-daily satellite imagery data and insights. Planet is
                   driven by a mission to image all of Earth’s landmass every day, and make global change visible,
-                  accessible and actionable. Founded in 2010 by three NASA scientists, Planet designs, builds, and
-                  operates the largest earth observation fleet of satellites, and provides the online software, tools
-                  and analytics needed to deliver data to users. Decision makers in business, government, and within
-                  organizations can use Planet's data and machine learning-powered analytics to develop new
-                  technologies, drive revenue, power research, and make informed, timely decisions to solve our world's
-                  toughest challenges. To learn more visit <ExternalLink>www.planet.com</ExternalLink> and follow us on Twitter at @planetlabs.</p>
+                  accessible and actionable. To learn more visit <ExternalLink
+                    href={'https://www.planet.com'}>www.planet.com</ExternalLink> and follow us on Twitter at
+                  @planetlabs.
+                </p>
               </section>
 
-              <section className={'mb-5'}>
+              <section className={'mb-5 d-none d-lg-block'}>
                 <h2 className={'mb-5 text-center'}>Sponsors</h2>
                 <h3 className="h5 text-muted text-center">GOLD</h3>
-                <div style={sponsorRow} className={'d-flex justify-content-center'}>
-                  <img src={'images/hackathon/tg.svg'} alt={'TeleGroup'}/>
+                <div className={'d-flex justify-content-center flex-column mb-5'}>
+                  <ExternalLink className={'m-auto mb-4'} href={"https://www.telegroup-ltd.com/"} style={{minHeight: 100}}>
+                    <img src={'images/hackathon/tg.svg'} alt={'TeleGroup'} width={"100%"} height={100}/>
+                  </ExternalLink>
+                  <ExternalLink className={'m-auto mb-4'} href={"https://www.endurosat.com/"} style={{width: 250}}>
+                    <img src={'images/hackathon/EndurosatLogo.png'} alt={'Endurosat'} width={'100%'}/>
+                  </ExternalLink>
                 </div>
                 <h3 className="h5 text-muted text-center">SILVER</h3>
+                <div style={sponsorRow} className={'d-flex justify-content-between'}>
+                  <ExternalLink href={"http://vekom.com/"}>
+                    <img src={'images/hackathon/vekom.jpg'} alt={'Vekom'}/>
+                  </ExternalLink>
+                  <ExternalLink href={"http://www.tehnomarket.com/novi/"}>
+                    <img src={'images/hackathon/tehnomarket.png'} alt={'Tehnomarket'} width={"100%"}/>
+                  </ExternalLink>
+                  <ExternalLink href={"https://aero.konelek.com/"}>
+                    <img src={'images/hackathon/10.png'} alt={'Konelek'}/>
+                  </ExternalLink>
+                </div>
+              </section>
+
+              <section className={'mb-5 d-none d-lg-block'}>
+                <h2 className={'mb-5 text-center'}>Media Partners</h2>
                 <div style={sponsorRow} className={'d-flex justify-content-center'}>
-                  <img src={'images/hackathon/vekom.jpg'} alt={'Vekom'}/>
-                  <img src={'images/hackathon/tehnomarket.png'} alt={'Tehnomarket'} width="40%"/>
-                  <img src={'images/hackathon/10.png'} alt={'Konelek'} width="70%"/>
+                  <ExternalLink href={"https://www.ict-cs.org/rs/"} className={'mx-3'}>
+                    <img src={'images/hackathon/ikt.png'} alt={'IKT'} width={250}/>
+                  </ExternalLink>
+                  <ExternalLink href={"https://spacegeneration.org/"} className={'mx-3'}>
+                    <img src={'images/hackathon/stea.png'} alt={'STEA'} width={100}/>
+                  </ExternalLink>
                 </div>
               </section>
             </div>

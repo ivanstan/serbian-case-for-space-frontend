@@ -21,13 +21,13 @@ class HackathonRegistration extends React.Component<any> {
         method="POST"
       >
         <div className="form-group">
-          <label htmlFor="email">
+          <label htmlFor="_replyto">
             {t('Email')} <span className="text-danger">*</span>
           </label>
           <input
             className="form-control"
-            id="email"
-            name="email"
+            id="_replyto"
+            name="_replyto"
             required
             type="text"
           />
@@ -129,8 +129,8 @@ class HackathonRegistration extends React.Component<any> {
 
             <div>
               <ul className="pl-4">
-                <li>maximum number of team members is 4.</li>
-                <li>number of teams is limited and it is on the first come first serve basis, <br/>
+                <li>Maximum number of team members is 5.</li>
+                <li>Number of teams is limited and it is on the first come first serve basis, <br/>
                   however advantage will be given to the geographical representation.
                 </li>
               </ul>
