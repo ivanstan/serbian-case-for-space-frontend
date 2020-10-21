@@ -46,7 +46,15 @@ const logo = {
   background: '#fff',
 }
 
+const registrationEnd = 1603324800 // 22.10.2020 12:00 AM
+
 class Hackaton extends React.Component<any, any> {
+
+  public registrationEnabled(): boolean {
+    const ts = Math.round((new Date()).getTime() / 1000);
+
+    return ts < registrationEnd
+  }
 
   public render() {
     const { t } = this.props
@@ -92,7 +100,7 @@ class Hackaton extends React.Component<any, any> {
                   <img src="images/logo/logo.svg" alt="SCS" width="70%" className="m-auto"/>
                   <span className="text-center">Serbian Case For Space</span>
                 </div>
-                <div style={{width: 250}}>
+                <div style={{ width: 250 }}>
                   <img src="images/hackathon/planet.jpg" alt="Planet" width="85%" className={'mt-2'}/>
                 </div>
               </section>
@@ -112,7 +120,8 @@ class Hackaton extends React.Component<any, any> {
               </section>
 
               <section className="d-flex justify-content-center">
-                <Popup trigger={<button className="btn btn-lg btn-primary mb-5">Register</button>}
+                <Popup trigger={<button disabled={!this.registrationEnabled()}
+                                        className="btn btn-lg btn-primary mb-5">Register</button>}
                        position="center center"
                        modal>
                   <div style={{ background: '#fff', boxShadow: '0px 0px 10px 0px rgba(55,54,54,1)' }} className={'p-5'}>
@@ -120,6 +129,12 @@ class Hackaton extends React.Component<any, any> {
                   </div>
                 </Popup>
               </section>
+
+              {!this.registrationEnabled() &&
+              <section className="d-flex justify-content-center">
+                <p>Registrations have ended.</p>
+              </section>
+              }
 
               <section className={'mb-5'}>
                 <h2 className={'mb-2 text-center'}>Challenges</h2>
@@ -247,33 +262,38 @@ class Hackaton extends React.Component<any, any> {
                   in the field</p>
                 <ul className={'mt-5'}>
                   <li> Registrations are open until 21 October 2020</li>
-                  <li>  Participants are welcomed to register as individuals or as teams (maximum number of participants per team is 5). If you register individually, you will be connected to other individual participants in order to form a team
+                  <li> Participants are welcomed to register as individuals or as teams (maximum number of participants
+                    per team is 5). If you register individually, you will be connected to other individual participants
+                    in order to form a team
                   </li>
-                  <li>Planet Balkan Hackathon is an online event and all you and your team need, is your laptops, creative minds and positive energy</li>
+                  <li>Planet Balkan Hackathon is an online event and all you and your team need, is your laptops,
+                    creative minds and positive energy
+                  </li>
                 </ul>
               </section>
 
-              <section className="d-flex justify-content-center">
-                <Popup trigger={<button className="btn btn-lg btn-primary mb-5">Register</button>}
-                       position="center center"
-                       modal>
-                  <div style={{ background: '#fff', boxShadow: '0px 0px 10px 0px rgba(55,54,54,1)' }} className={'p-5'}>
-                    <HackathonRegistration/>
-                  </div>
-                </Popup>
-              </section>
+              {/*<section className="d-flex justify-content-center">*/}
+              {/*  <Popup trigger={<button className="btn btn-lg btn-primary mb-5">Register</button>}*/}
+              {/*         position="center center"*/}
+              {/*         modal>*/}
+              {/*    <div style={{ background: '#fff', boxShadow: '0px 0px 10px 0px rgba(55,54,54,1)' }} className={'p-5'}>*/}
+              {/*      <HackathonRegistration/>*/}
+              {/*    </div>*/}
+              {/*  </Popup>*/}
+              {/*</section>*/}
 
               <section className={'mt-2 mb-5'}>
                 <h2 className={'mb-5 text-center'}>Organizers</h2>
                 <div>
-                <div className="d-flex flex-column float-left mr-3" style={logo}>
-                  <img src="images/logo/logo.svg" alt="SCS" width="70" className="m-auto"/>
-                  <span className="text-center">Serbian Case For Space</span>
-                </div>
-                <p className={'mt-3'}>Serbian Case for Space Foundation (SCS) is a think tank organization, established
-                  with the aim to
-                  promote the importance and benefits of Serbia’s engagement in the space domain, by educating and
-                  encouraging the development of space eco-system in Serbia from bottom-up.</p>
+                  <div className="d-flex flex-column float-left mr-3" style={logo}>
+                    <img src="images/logo/logo.svg" alt="SCS" width="70" className="m-auto"/>
+                    <span className="text-center">Serbian Case For Space</span>
+                  </div>
+                  <p className={'mt-3'}>Serbian Case for Space Foundation (SCS) is a think tank organization,
+                    established
+                    with the aim to
+                    promote the importance and benefits of Serbia’s engagement in the space domain, by educating and
+                    encouraging the development of space eco-system in Serbia from bottom-up.</p>
                 </div>
 
                 <img src="images/hackathon/planet.jpg" alt="Planet" width="13%" style={{ float: 'left' }}
@@ -290,22 +310,23 @@ class Hackaton extends React.Component<any, any> {
                 <h2 className={'mb-5 text-center'}>Sponsors</h2>
                 <h3 className="h5 text-muted text-center">GOLD</h3>
                 <div className={'d-flex justify-content-center flex-column mb-5'}>
-                  <ExternalLink className={'m-auto mb-4'} href={"https://www.telegroup-ltd.com/"} style={{minHeight: 100}}>
-                    <img src={'images/hackathon/tg.svg'} alt={'TeleGroup'} width={"100%"} height={100}/>
+                  <ExternalLink className={'m-auto mb-4'} href={'https://www.telegroup-ltd.com/'}
+                                style={{ minHeight: 100 }}>
+                    <img src={'images/hackathon/tg.svg'} alt={'TeleGroup'} width={'100%'} height={100}/>
                   </ExternalLink>
-                  <ExternalLink className={'m-auto mb-4'} href={"https://www.endurosat.com/"} style={{width: 250}}>
+                  <ExternalLink className={'m-auto mb-4'} href={'https://www.endurosat.com/'} style={{ width: 250 }}>
                     <img src={'images/hackathon/EndurosatLogo.png'} alt={'Endurosat'} width={'100%'}/>
                   </ExternalLink>
                 </div>
                 <h3 className="h5 text-muted text-center">SILVER</h3>
                 <div style={sponsorRow} className={'d-flex justify-content-between'}>
-                  <ExternalLink href={"http://vekom.com/"}>
+                  <ExternalLink href={'http://vekom.com/'}>
                     <img src={'images/hackathon/vekom.jpg'} alt={'Vekom'}/>
                   </ExternalLink>
-                  <ExternalLink href={"http://www.tehnomarket.com/novi/"}>
-                    <img src={'images/hackathon/tehnomarket.png'} alt={'Tehnomarket'} width={"100%"}/>
+                  <ExternalLink href={'http://www.tehnomarket.com/novi/'}>
+                    <img src={'images/hackathon/tehnomarket.png'} alt={'Tehnomarket'} width={'100%'}/>
                   </ExternalLink>
-                  <ExternalLink href={"https://aero.konelek.com/"}>
+                  <ExternalLink href={'https://aero.konelek.com/'}>
                     <img src={'images/hackathon/10.png'} alt={'Konelek'}/>
                   </ExternalLink>
                 </div>
@@ -314,10 +335,10 @@ class Hackaton extends React.Component<any, any> {
               <section className={'mb-5 d-none d-lg-block'}>
                 <h2 className={'mb-5 text-center'}>Media Partners</h2>
                 <div style={sponsorRow} className={'d-flex justify-content-center'}>
-                  <ExternalLink href={"https://www.ict-cs.org/rs/"} className={'mx-3'}>
+                  <ExternalLink href={'https://www.ict-cs.org/rs/'} className={'mx-3'}>
                     <img src={'images/hackathon/ikt.png'} alt={'IKT'} width={250}/>
                   </ExternalLink>
-                  <ExternalLink href={"https://spacegeneration.org/"} className={'mx-3'}>
+                  <ExternalLink href={'https://spacegeneration.org/'} className={'mx-3'}>
                     <img src={'images/hackathon/stea.png'} alt={'STEA'} width={100}/>
                   </ExternalLink>
                 </div>
