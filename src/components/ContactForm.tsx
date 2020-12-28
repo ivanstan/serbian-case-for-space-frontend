@@ -2,6 +2,7 @@ import React from 'react'
 import { ErrorMessage, Field, Form, Formik, FormikErrors, FormikTouched, FormikValues } from 'formik'
 import { translate } from 'react-polyglot'
 import { If } from 'react-if'
+import Recaptcha from 'react-recaptcha'
 
 interface ContactFormModel {
   _replyTo: string;
@@ -9,11 +10,12 @@ interface ContactFormModel {
   message: string;
   firstName: string;
   lastName: string;
+  recaptcha: string;
 }
 
 class ContactForm extends React.Component<any, any> {
 
-  public endpoint: string = 'https://app2mail.ivanstanojevic.me/application/9123a61c-0e08-11eb-b0d1-2cfda1c64332'
+  public endpoint: string = 'https://localhost:8000/application/9123a61c-0e08-11eb-b0d1-2cfda1c64332'
 
   public state = {
     success: false,
@@ -25,6 +27,7 @@ class ContactForm extends React.Component<any, any> {
     message: '',
     firstName: '',
     lastName: '',
+    recaptcha: '',
   }
 
   public requiredFields: string[] = [
@@ -48,7 +51,8 @@ class ContactForm extends React.Component<any, any> {
       {
         body: formData,
         method: 'post',
-        redirect: 'manual',
+        redirect: 'follow',
+        mode: 'no-cors',
       }).then(response => {
 
       this.setState({
@@ -79,6 +83,8 @@ class ContactForm extends React.Component<any, any> {
       errors._replyTo = t('Invalid email address')
     }
 
+    console.log(errors)
+
     return errors
   }
 
@@ -104,7 +110,7 @@ class ContactForm extends React.Component<any, any> {
         validate={(values) => this.validate(values)}
         onSubmit={(values: ContactFormModel, { setSubmitting, resetForm }: any) => this.onSubmit(values, setSubmitting, resetForm)}
       >
-        {({ isSubmitting, isValid, errors, touched }) => (
+        {({ isSubmitting, isValid, errors, touched, setFieldValue }) => (
           <Form translate="yes">
             <If condition={this.state.success}>
               <div className="alert alert-success" role="alert">
@@ -163,6 +169,17 @@ class ContactForm extends React.Component<any, any> {
               <ErrorMessage name="message" component="small" className="form-text text-danger"/>
               {!this.hasError(errors, touched, 'message') && <small className="form-text">&nbsp;</small>}
             </div>
+
+            <fieldset className="mb-4">
+              <Recaptcha
+                sitekey="6LeJyuEZAAAAAMbGVDQUL9vUY5qLhaLX_RkeZcdb"
+                verifyCallback={(response) => setFieldValue('recaptcha', response)}
+                expiredCallback={() => setFieldValue('recaptcha', '')}
+              />
+              {errors['recaptcha'] &&
+              <small className="form-text text-danger">{t('Recaptcha challenge is required.')}</small>}
+              {!this.hasError(errors, touched, 'recaptcha') && <small className="form-text">&nbsp;</small>}
+            </fieldset>
 
             <div className="d-flex justify-content-center">
               <button type="submit" className="btn btn-lg btn-primary" disabled={!isValid || isSubmitting}>
