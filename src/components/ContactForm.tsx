@@ -170,16 +170,16 @@ class ContactForm extends React.Component<any, any> {
               {!this.hasError(errors, touched, 'message') && <small className="form-text">&nbsp;</small>}
             </div>
 
-            <fieldset className="mb-4">
-              <Recaptcha
-                sitekey="6LeJyuEZAAAAAMbGVDQUL9vUY5qLhaLX_RkeZcdb"
-                verifyCallback={(response) => setFieldValue('recaptcha', response)}
-                expiredCallback={() => setFieldValue('recaptcha', '')}
-              />
-              {errors['recaptcha'] &&
-              <small className="form-text text-danger">{t('Recaptcha challenge is required.')}</small>}
-              {!this.hasError(errors, touched, 'recaptcha') && <small className="form-text">&nbsp;</small>}
-            </fieldset>
+            {/*<fieldset className="mb-4">*/}
+            {/*  <Recaptcha*/}
+            {/*    sitekey="6LeJyuEZAAAAAMbGVDQUL9vUY5qLhaLX_RkeZcdb"*/}
+            {/*    verifyCallback={(response) => setFieldValue('recaptcha', response)}*/}
+            {/*    expiredCallback={() => setFieldValue('recaptcha', '')}*/}
+            {/*  />*/}
+            {/*  {errors['recaptcha'] &&*/}
+            {/*  <small className="form-text text-danger">{t('Recaptcha challenge is required.')}</small>}*/}
+            {/*  {!this.hasError(errors, touched, 'recaptcha') && <small className="form-text">&nbsp;</small>}*/}
+            {/*</fieldset>*/}
 
             <div className="d-flex justify-content-center">
               <button type="submit" className="btn btn-lg btn-primary" disabled={!isValid || isSubmitting}>
