@@ -1,20 +1,20 @@
-import React from 'react'
-import ScrollAnimation from 'react-animate-on-scroll'
-import { translate } from 'react-polyglot'
+import React from "react";
+import ScrollAnimation from "react-animate-on-scroll";
+import { translate } from "react-polyglot";
 
 const img = {
   maxWidth: 315,
   minWidth: 315,
-  maxHeight: 484,
-}
+  maxHeight: 484
+};
 
 const image = {
-  backgroundImage: 'url(/images/team.jpg)',
-  backgroundSize: 'cover',
-  height: '50vh',
-  position: 'relative' as 'relative',
-  backgroundPosition: 'center',
-}
+  backgroundImage: "url(/images/team.jpg)",
+  backgroundSize: "cover",
+  height: "50vh",
+  position: "relative" as "relative",
+  backgroundPosition: "center"
+};
 
 export const title = {
   fontSize: 74,
@@ -42,7 +42,7 @@ class Team extends React.Component<any, any> {
                   <img
                     style={img}
                     width="100%"
-                    src="/images/anja.jpg"
+                    src="/images/team/anja.jpg"
                     alt="Anja Nakarada Pecujlic"
                   />
                   <div className="px-lg-4 mt-4 mt-lg-0">
@@ -67,7 +67,7 @@ class Team extends React.Component<any, any> {
                   <img
                     style={img}
                     width="100%"
-                    src="/images/marko.jpg"
+                    src="/images/team/marko.jpg"
                     alt="Marko Pajovic"
                   />
                   <div className="px-lg-4 mt-4 mt-lg-0">
@@ -92,7 +92,7 @@ class Team extends React.Component<any, any> {
                   <img
                     style={img}
                     width="100%"
-                    src="/images/andrej.jpg"
+                    src="/images/team/andrej.jpg"
                     alt="Andrej Djurmez"
                   />
                   <div className="px-lg-4 mt-4 mt-lg-0">
@@ -114,43 +114,12 @@ class Team extends React.Component<any, any> {
                 <p>Co-founder and CCO</p>
               </div>
 
-              {/*<div className="mb-5">*/}
-              {/*  <div className="d-lg-flex mb-1">*/}
-              {/*    <img*/}
-              {/*      style={img}*/}
-              {/*      width="100%"*/}
-              {/*      src="/images/bosko.jpg"*/}
-              {/*      alt="Bosko Vojkic"*/}
-              {/*    />*/}
-              {/*    <div className="px-lg-4 mt-4 mt-lg-0">*/}
-              {/*      <h2 className="h4">BOŠKO VOJKIĆ</h2>*/}
-              {/*      <ScrollAnimation*/}
-              {/*        animateIn="fadeInUp"*/}
-              {/*        duration={1}*/}
-              {/*        animateOnce={true}*/}
-              {/*      >*/}
-              {/*        <p>*/}
-              {/*          Bosko Vojkic is Space Law and Telecommunications*/}
-              {/*          professional with previous experience as University*/}
-              {/*          lecturer in Space Law and Policy, ICT Legal Associate*/}
-              {/*          and Telco Business Associate. He holds a Master 2 Degree*/}
-              {/*          in Space Law Activities and Telecommunications from*/}
-              {/*          Paris Saclay / Paris-Sud University and Institute for*/}
-              {/*          Space Law and Telecommunications from Paris, France*/}
-              {/*          (Master thesis: Mega-constellations).*/}
-              {/*        </p>*/}
-              {/*      </ScrollAnimation>*/}
-              {/*    </div>*/}
-              {/*  </div>*/}
-              {/*  <p>Communication Specialist</p>*/}
-              {/*</div>*/}
-
               <div className="mb-5">
                 <div className="d-lg-flex mb-1">
                   <img
                     style={img}
                     width="100%"
-                    src="/images/ivan.png"
+                    src="/images/team/ivan.png"
                     alt="Ivan Stanojevic"
                   />
                   <div className="px-lg-4 mt-4 mt-lg-0">
@@ -161,7 +130,7 @@ class Team extends React.Component<any, any> {
                       animateOnce={true}
                     >
                       <p>
-                        Ivan Stanojevic is a software engineer working for
+                        Ivan is a software engineer working for
                         Byteout Software. There he has gathered a team of
                         enthusiasts in order to organize NASA Space Apps
                         Challenge in Serbia. He is also taking a role of the
@@ -172,7 +141,7 @@ class Team extends React.Component<any, any> {
                     </ScrollAnimation>
                   </div>
                 </div>
-                <p>Chief Technical Officer</p>
+                <p>CTO</p>
               </div>
 
               <div className="mb-5">
@@ -180,11 +149,11 @@ class Team extends React.Component<any, any> {
                   <img
                     style={img}
                     width="100%"
-                    src="/images/dalibor.jpg"
-                    alt="Ivan Stanojevic"
+                    src="/images/team/dalibor.jpg"
+                    alt="DALIBOR ĐURAN"
                   />
                   <div className="px-lg-4 mt-4 mt-lg-0">
-                    <h2 className="h4">DALIBOR DJURAN</h2>
+                    <h2 className="h4">DALIBOR ĐURAN</h2>
                     <ScrollAnimation
                       animateIn="fadeInUp"
                       duration={1}
@@ -199,6 +168,61 @@ class Team extends React.Component<any, any> {
                 </div>
                 <p>Advisor</p>
               </div>
+
+
+              <div className="mb-5">
+                <div className="d-lg-flex mb-1">
+                  <img
+                    style={img}
+                    width="100%"
+                    src="/images/team/dusan.png"
+                    alt="DUSAN PAVLOVIĆ"
+                  />
+                  <div className="px-lg-4 mt-4 mt-lg-0">
+                    <h2 className="h4">DUSAN PAVLOVIĆ</h2>
+                    <ScrollAnimation
+                      animateIn="fadeInUp"
+                      duration={1}
+                      animateOnce={true}
+                    >
+                      <p>
+                        Dusan is a Mechanical (Aerospace) Engineer and a Commercial Pilot. During his work as a Design
+                        Engineer, Dusan participated in various Aerospace projects gaining experience in Unmanned Aerial
+                        Systems, Composite Structures and testing process.
+                      </p>
+                    </ScrollAnimation>
+                  </div>
+                </div>
+                <p>Project Assistant</p>
+              </div>
+
+
+              <div className="mb-5">
+                <div className="d-lg-flex mb-1">
+                  <img
+                    style={img}
+                    width="100%"
+                    src="/images/team/jelena.jpg"
+                    alt="JELENA ALEKSIĆ"
+                  />
+                  <div className="px-lg-4 mt-4 mt-lg-0">
+                    <h2 className="h4">JELENA ALEKSIĆ</h2>
+                    <ScrollAnimation
+                      animateIn="fadeInUp"
+                      duration={1}
+                      animateOnce={true}
+                    >
+                      <p>
+                        Jelena is an engineer working in the aerospace industry and a participant in numerous projects,
+                        mostly related to Unmanned Aerial Systems. Jelena is educated at University of Belgrade, where
+                        she received her Master's degree in Air Transport and Traffic Engineering.
+                      </p>
+                    </ScrollAnimation>
+                  </div>
+                </div>
+                <p>Project Assistant</p>
+              </div>
+
             </div>
           </div>
         </div>

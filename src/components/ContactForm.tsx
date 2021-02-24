@@ -15,7 +15,7 @@ interface ContactFormModel {
 
 class ContactForm extends React.Component<any, any> {
 
-  public endpoint: string = 'https://localhost:8000/application/9123a61c-0e08-11eb-b0d1-2cfda1c64332'
+  public endpoint: string = 'https://app2mail.ivanstanojevic.me/application/9123a61c-0e08-11eb-b0d1-2cfda1c64332'
 
   public state = {
     success: false,
