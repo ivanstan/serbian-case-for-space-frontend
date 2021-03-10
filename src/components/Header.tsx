@@ -34,6 +34,9 @@ class Header extends React.Component<any, any> {
               <NavLink className="nav-link" exact to="/projects">
                 {t('Projects')}
               </NavLink>
+              <NavLink className="nav-link" exact to="/events">
+                {t('Events')}
+              </NavLink>
               <NavLink className="nav-link" exact to="/news">
                 {t('News')}
               </NavLink>
