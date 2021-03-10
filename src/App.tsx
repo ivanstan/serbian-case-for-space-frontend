@@ -20,6 +20,7 @@ import NewsDetail from './pages/NewsDetail'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 import Hackaton from './pages/Hackaton'
+import Events from "./pages/Events";
 
 @observer
 export default class App extends React.Component<any, any> {
@@ -43,6 +44,7 @@ export default class App extends React.Component<any, any> {
             >
               <Route path="/" exact component={Home}/>
               <Route path="/about" exact component={About}/>
+              <Route path="/events" exact component={Events}/>
               <Route path="/projects" exact component={Projects}/>
               <Route path="/project/:id" exact component={ProjectDetail}/>
               <Route path="/team" exact component={Team}/>

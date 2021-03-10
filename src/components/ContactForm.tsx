@@ -2,7 +2,6 @@ import React from 'react'
 import { ErrorMessage, Field, Form, Formik, FormikErrors, FormikTouched, FormikValues } from 'formik'
 import { translate } from 'react-polyglot'
 import { If } from 'react-if'
-import Recaptcha from 'react-recaptcha'
 
 interface ContactFormModel {
   _replyTo: string;
