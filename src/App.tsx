@@ -1,26 +1,27 @@
-import React from 'react'
-import 'animate.css/animate.min.css'
-import { HashRouter as Router, Route } from 'react-router-dom'
-import { AnimatedSwitch } from 'react-router-transition'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Team from './pages/Team'
-import Contact from './pages/Contact'
-import Partners from './pages/Partners'
-import Blog from './pages/News'
-import Home from './pages/Home'
-import { observer } from 'mobx-react'
-import { store } from './stores/Store'
-import { I18n } from 'react-polyglot'
-import { Helmet } from 'react-helmet'
-import ProjectDetail from './pages/ProjectDetail'
-import NewsDetail from './pages/NewsDetail'
-import Privacy from './pages/Privacy'
-import Terms from './pages/Terms'
-import Hackaton from './pages/Hackaton'
+import React from "react";
+import "animate.css/animate.min.css";
+import { HashRouter as Router, Route } from "react-router-dom";
+import { AnimatedSwitch } from "react-router-transition";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Team from "./pages/Team";
+import Contact from "./pages/Contact";
+import Partners from "./pages/Partners";
+import Blog from "./pages/News";
+import Home from "./pages/Home";
+import { observer } from "mobx-react";
+import { store } from "./stores/Store";
+import { I18n } from "react-polyglot";
+import { Helmet } from "react-helmet";
+import ProjectDetail from "./pages/ProjectDetail";
+import NewsDetail from "./pages/NewsDetail";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import Events from "./pages/Events";
+import Planet2020Hackaton from "./pages/events/Planet2020Hackaton";
+import { RGZ2021Hackathon } from "./pages/events/RGZ2021Hackathon";
 
 @observer
 export default class App extends React.Component<any, any> {
@@ -29,34 +30,35 @@ export default class App extends React.Component<any, any> {
     return (
       <div className="flex-wrapper">
         <Helmet>
-          <meta charSet="utf-8"/>
+          <meta charSet="utf-8" />
           {/*<title>My Title</title>*/}
           {/*<link rel="canonical" href="http://mysite.com/example"/>*/}
         </Helmet>
 
         <I18n locale={store.locale} messages={store.messages} allowMissing={true}>
           <Router>
-            <Header/>
+            <Header />
             <AnimatedSwitch
               atEnter={{ opacity: 0 }}
               atLeave={{ opacity: 0 }}
               atActive={{ opacity: 1 }}
             >
-              <Route path="/" exact component={Home}/>
-              <Route path="/about" exact component={About}/>
-              <Route path="/events" exact component={Events}/>
-              <Route path="/projects" exact component={Projects}/>
-              <Route path="/project/:id" exact component={ProjectDetail}/>
-              <Route path="/team" exact component={Team}/>
-              <Route path="/contact" exact component={Contact}/>
-              <Route path="/partners" exact component={Partners}/>
-              <Route path="/news" exact component={Blog}/>
-              <Route path="/news/:id" exact component={NewsDetail}/>
-              <Route path="/terms-of-use" exact component={Terms}/>
-              <Route path="/privacy-policy" exact component={Privacy}/>
-              <Route path="/hackathon" exact component={Hackaton}/>
+              <Route path="/" exact component={Home} />
+              <Route path="/about" exact component={About} />
+              <Route path="/events" exact component={Events} />
+              <Route path="/projects" exact component={Projects} />
+              <Route path="/project/:id" exact component={ProjectDetail} />
+              <Route path="/team" exact component={Team} />
+              <Route path="/contact" exact component={Contact} />
+              <Route path="/partners" exact component={Partners} />
+              <Route path="/news" exact component={Blog} />
+              <Route path="/news/:id" exact component={NewsDetail} />
+              <Route path="/terms-of-use" exact component={Terms} />
+              <Route path="/privacy-policy" exact component={Privacy} />
+              <Route path="/planet-hackathon-2020" exact component={Planet2020Hackaton} />
+              <Route path="/rgz-hackathon-2021" exact component={RGZ2021Hackathon} />
             </AnimatedSwitch>
-            <Footer/>
+            <Footer />
           </Router>
         </I18n>
       </div>

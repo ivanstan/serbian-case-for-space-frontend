@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 import { translate } from 'react-polyglot'
-import { ExternalLink } from '../components/ExternalLink'
+import { ExternalLink } from '../../components/ExternalLink'
 
-class HackathonRegistration extends React.Component<any> {
+class Planet2020HackathonRegistration extends React.Component<any> {
   state = {
     hasTeam: false,
   }
@@ -174,4 +174,4 @@ class HackathonRegistration extends React.Component<any> {
   }
 }
 
-export default translate()(HackathonRegistration)
+export default translate()(Planet2020HackathonRegistration)

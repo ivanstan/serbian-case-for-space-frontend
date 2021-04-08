@@ -1,8 +1,8 @@
 import React from 'react'
 import { translate } from 'react-polyglot'
-import HackathonRegistration from './HackathonRegistration'
+import Planet2020HackathonRegistration from './Planet2020HackathonRegistration'
 import Popup from 'reactjs-popup'
-import { ExternalLink } from '../components/ExternalLink'
+import { ExternalLink } from '../../components/ExternalLink'
 
 const image = {
   backgroundImage: 'url(\'images/hackathon/belgrade.png\')',
@@ -48,7 +48,7 @@ const logo = {
 
 const registrationEnd = 1603324800 // 22.10.2020 12:00 AM
 
-class Hackaton extends React.Component<any, any> {
+class Planet2020Hackaton extends React.Component<any, any> {
 
   public registrationEnabled(): boolean {
     const ts = Math.round((new Date()).getTime() / 1000);
@@ -125,7 +125,7 @@ class Hackaton extends React.Component<any, any> {
                        position="center center"
                        modal>
                   <div style={{ background: '#fff', boxShadow: '0px 0px 10px 0px rgba(55,54,54,1)' }} className={'p-5'}>
-                    <HackathonRegistration/>
+                    <Planet2020HackathonRegistration/>
                   </div>
                 </Popup>
               </section>
@@ -351,4 +351,4 @@ class Hackaton extends React.Component<any, any> {
   }
 }
 
-export default translate()(Hackaton)
+export default translate()(Planet2020Hackaton)
