@@ -102,12 +102,11 @@ export class RGZ2021Hackathon extends React.Component<any, any> {
             <div className="col-12">
 
               <p className={"mb-5"}>
-                Republički Geodetski Zavod (RGZ) i fondacija Serbian Case for Space (SCS), uz
-                podršku UNDP Serbia i američke kompanije Planet, organizuje jedinstven događaj na
-                kojem će učesnici iz Srbije imati prilike da uz pomoć podataka RGZ-a koji će biti
-                specijalno otvoreni za potrebe takmičenja i Planetovih satelitskih podataka, osmisle
-                kreativna rešenja iz jedne od tri ključnih oblasti za našu državu: zaštita životne
-                sredine, prirodne nepogode i unapređenje ekonomskog razvoja. Pobednički tim
+                Fondacija Serbian Case for Space (SCS) uz podršku Vlade Republike Srbije, Programa Ujedinjenih nacija za
+                razvoj (UNDP), kompanije Planet i Republičkog Geodetskog Zavoda, organizuje jedinstven događaj na kom će
+                učesnici iz Srbije imati priliku da, uz pomoć otvorenih geoprostornih i drugih podataka i Planetovih
+                satelitskih podataka, osmisle kreativna rešenja iz jedne od tri ključne oblasti za našu državu: zaštita
+                životne sredine, prevencija prirodnih nepogoda i unapređenje ekonomskog razvoja. Pobednički tim
                 očekuju vredne nagrade.
               </p>
 
@@ -134,7 +133,7 @@ export class RGZ2021Hackathon extends React.Component<any, any> {
                 <img src={"/images/rgz-hackathon/environment.svg"} alt={"Agriculture"}
                      className={"d-block mx-auto my-4"} style={{ maxWidth: 200 }} />
                 <div>
-                <div className={"d-md-block"}>
+                  <div className={"d-md-block"}>
                     <p>
                       Srbija se suočava sa negativnim posledicama klimatskih promena i nepažnjom
                       čoveka prema prirodi. Neki od problema na koje možemo da ukažemo su
@@ -146,7 +145,7 @@ export class RGZ2021Hackathon extends React.Component<any, any> {
                       i podzemnih voda, flore i faune.
                     </p>
                     <p>
-                      Iskoristi podatke koji će biti posebno otvoreni za potrebe SCS hakatona i smisli
+                      Iskoristi otvorene podatke za potrebe SCS hakatona i smisli
                       inovativno rešenje koje će doprineti detekciji divljih deponija, sprečavanju
                       deforestacije ili doprineti borbi za zaštitu životne sredine kroz rešavanje problema
                       koje si primetio u lokalnoj sredini.
@@ -191,7 +190,7 @@ export class RGZ2021Hackathon extends React.Component<any, any> {
                       preko 200 miliona evra i takođe nose sa sobom visok rizik nepoštovanja standardna
                       izgradnje ili zaštite životne sredine. Sa druge strane, satelitsku tehnologiju možemo
                       primeniti u starim industrijskim granama, kao što je rudarstvo, kako bi se
-                      modernizovali. Procenjuje se da na teritoriji Srbije postoje značajne količine cinka,
+                      modernizovale. Procenjuje se da na teritoriji Srbije postoje značajne količine cinka,
                       srebra, zlata i drugih metala raspoređenih u 200 eksploatacionih i 127 istražnih polja.
                     </p>
                     <p>
