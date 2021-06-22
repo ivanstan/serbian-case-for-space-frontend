@@ -46,15 +46,17 @@ class Team extends React.Component<any, any> {
                     alt="Anja Nakarada Pecujlic"
                   />
                   <div className="px-lg-4 mt-4 mt-lg-0">
-                    <h2 className="h4">ANJA NAKARADA PEČUJLIĆ</h2>
+                    <h2 className="h4">Dr. ANJA NAKARADA PEČUJLIĆ</h2>
                     {/*<ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>*/}
                     <p>
-                      Anja is a PhD candidate and a research assistant at the University of Cologne, writing her thesis
-                      in space law. Furthermore, since December 2017 she is the Project Manager for a European Space
-                      Agency (ESA)/Cologne University joint project: “ESA Convention Commentary”. Prior to that, from
-                      2014 to 2016, she was an External Consultant of the European Space Policy Institute, Vienna,
-                      Austria. Lastly, Anja is an SGAC's National Point of Contact for Serbia and she serves as a judge
-                      for Manfred Lachs Moot Court competition.
+                      Anja holds a doctorate degree in space law from University of Cologne and she is working for a
+                      space start-up, Axelspace, as a Business Creator for Europe. Prior to that, from 2017 until 2020
+                      she was the Project Manager for a European Space Agency (ESA)/Cologne University joint project:
+                      “ESA Convention Commentary” and from 2014 to 2016, she was an External Consultant of the European
+                      Space Policy Institute in Vienna, Austria. Furthermore, Anja published numerous articles and book
+                      chapters, and she was one of the editors of the book "Promoting Productive Cooperation between
+                      Space Lawyers and Engineers". Lastly, Anja is an SGAC's National Point of Contact for Serbia and
+                      she serves as a judge for Manfred Lachs Moot Court competition
                     </p>
                     {/*</ScrollAnimation>*/}
                   </div>

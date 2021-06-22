@@ -121,6 +121,44 @@ class Partners extends React.Component<any, any> {
                 </ExternalLink>
               </div>
 
+              <div className="d-flex align-items-center justify-content-between my-3">
+                <ExternalLink href="https://copernicus-masters.com/">
+                  <img
+                    width="200px"
+                    height="90px"
+                    alt=""
+                    src="/images/partners/copernicus-masters_logo_final_hi.png"
+                  />
+                </ExternalLink>
+                <ExternalLink href="https://galileo-masters.eu/">
+                  <img
+                    width="250px"
+                    height="80px"
+                    alt=""
+                    src="/images/partners/GalileoMasters_Logo.png"
+                  />
+                </ExternalLink>
+                <ExternalLink href="https://spacewatch.global/">
+                  <img
+                    width="100px"
+                    height="100px"
+                    alt=""
+                    src="/images/partners/images.jpg"
+                  />
+                </ExternalLink>
+              </div>
+              <div className="d-flex align-items-center justify-content-between my-3">
+
+                <ExternalLink href="https://www.ispaceschool.com/">
+                  <img
+                    width="200px"
+                    height="70px"
+                    alt=""
+                    src="/images/partners/Logo.JPG"
+                  />
+                </ExternalLink>
+              </div>
+
               <hr className="my-5"/>
 
               <h2>BECOME A PARTNER</h2>

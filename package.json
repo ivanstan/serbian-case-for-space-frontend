@@ -20,7 +20,7 @@
     "formik": "^2.2.0",
     "jquery": "^3.4.1",
     "mobx": "^5.14.2",
-    "mobx-react": "^6.1.4",
+    "mobx-react": "^5.4.4",
     "mobx-utils": "^5.5.1",
     "node-polyglot": "^2.4.0",
     "node-sass": "^4.12.0",

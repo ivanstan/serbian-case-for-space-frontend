@@ -260,7 +260,7 @@ export class RGZ2021Hackathon extends React.Component<any, any> {
 
               <ul>
                 <li>
-                  Registracije su otvorene do 19. maja u 00:00.
+                  Registracije su otvorene do 19. maja u 20:00.
                 </li>
                 <li>
                   Učesnici su pozvani da se registruju kao pojedinci ili u timu (maksimalan broj
