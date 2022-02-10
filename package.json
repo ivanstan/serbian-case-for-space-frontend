@@ -23,7 +23,7 @@
     "mobx-react": "^5.4.4",
     "mobx-utils": "^5.5.1",
     "node-polyglot": "^2.4.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "popper": "^1.0.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
